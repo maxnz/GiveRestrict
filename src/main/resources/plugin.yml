@@ -1,6 +1,6 @@
 name: "GiveRestrict"
 version: "0.1"
-main: "online.gamingkitties.giverestrict.GiveRestrict"
+main: "io.github.maxnz.giverestrict.GiveRestrict"
 api-version: "1.15"
 description: Add permissions for each item that /give can give
 
