@@ -1,0 +1,3734 @@
+name: "GiveRestrict"
+version: "0.1"
+main: "online.gamingkitties.giverestrict.GiveRestrict"
+api-version: "1.15"
+description: Add permissions for each item that /give can give
+
+permissions:
+  giverestrict.all_lights:
+    description: Allow /give with lanterns and torches
+    children:
+      giverestrict.lantern: true
+      giverestrict.torch: true
+  giverestrict.all_cooked_food:
+    description: Allow /give with cooked food items
+    children:
+      giverestrict.baked_potato: true
+      giverestrict.beetroot_soup: true
+      giverestrict.bread: true
+      giverestrict.cake: true
+      giverestrict.cooked_beef: true
+      giverestrict.cooked_chicken: true
+      giverestrict.cooked_cod: true
+      giverestrict.cooked_mutton: true
+      giverestrict.cooked_porkchop: true
+      giverestrict.cooked_rabbit: true
+      giverestrict.cooked_salmon: true
+      giverestrict.cookie: true
+      giverestrict.mushroom_stew: true
+      giverestrict.pumpkin_pie: true
+
+  # Tools
+  giverestrict.all_axe:
+    description: Allow /give with all axes
+    children:
+      giverestrict.woooden_axe: true
+      giverestrict.stone_axe: true
+      giverestrict.iron_axe: true
+      giverestrict.gold_axe: true
+      giverestrict.diamond_axe: true
+  giverestrict.all_hoes:
+    description: Allow /give with all axes
+    children:
+      giverestrict.woooden_hoe: true
+      giverestrict.stone_hoe: true
+      giverestrict.iron_hoe: true
+      giverestrict.gold_hoe: true
+      giverestrict.diamond_hoe: true
+  giverestrict.all_pickaxe:
+    description: Allow /give with all pickaxes
+    children:
+      giverestrict.woooden_pickaxe: true
+      giverestrict.stone_pickaxe: true
+      giverestrict.iron_pickaxe: true
+      giverestrict.gold_pickaxe: true
+      giverestrict.diamond_pickaxe: true
+  giverestrict.all_shovel:
+    description: Allow /give with all shovels
+    children:
+      giverestrict.woooden_shovel: true
+      giverestrict.stone_shovel: true
+      giverestrict.iron_shovel: true
+      giverestrict.gold_shovel: true
+      giverestrict.diamond_shovel: true
+  giverestrict.all_sword:
+    description: Allow /give with all swords
+    children:
+      giverestrict.woooden_sword: true
+      giverestrict.stone_sword: true
+      giverestrict.iron_sword: true
+      giverestrict.gold_sword: true
+      giverestrict.diamond_sword: true
+  giverestrict.all_bow:
+    description: Allow /give with bow, crossbow and arrows
+    children:
+      giverestrict.bow: true
+      giverestrict.crossbow: true
+      giverestrict.arrow: true
+  giverestrict.all_tools:
+    description: Allow /give with tools
+    children:
+      giverestrict.all_axe: true
+      giverestrict.all_hoe: true
+      giverestrict.all_pickaxe: true
+      giverestrict.all_shovel: true
+      giverestrict.all_sword: true
+      giverestrict.all_bow: true
+      giverestrict.carrot_on_a_stick: true
+      giverestrict.clock: true
+      giverestrict.compass: true
+      giverestrict.fishing_rod: true
+      giverestrict.shears: true
+      giverestrict.shield: true
+
+  # Armor
+  giverestrict.all_leather_armor:
+    description: Allow /give of leather armor
+    children:
+      giverestrict.leather_boots: true
+      giverestrict.leather_chestplate: true
+      giverestrict.leather_helmet: true
+      giverestrict.leather_leggings: true
+  giverestrict.all_iron_armor:
+    description: Allow /give of iron armor
+    children:
+      giverestrict.iron_boots: true
+      giverestrict.iron_chestplate: true
+      giverestrict.iron_helmet: true
+      giverestrict.iron_leggings: true
+  giverestrict.all_gold_armor:
+    description: Allow /give of gold armor
+    children:
+      giverestrict.gold_boots: true
+      giverestrict.gold_chestplate: true
+      giverestrict.gold_helmet: true
+      giverestrict.gold_leggings: true
+  giverestrict.all_diamond_armor:
+    description: Allow /give of diamond armor
+    children:
+      giverestrict.diamond_boots: true
+      giverestrict.diamond_chestplate: true
+      giverestrict.diamond_helmet: true
+      giverestrict.diamond_leggings: true
+  giverestrict.all_chainmail_armor:
+    description: Allow /give of chainmail armor
+    children:
+      giverestrict.chainmail_boots: true
+      giverestrict.chainmail_chestplate: true
+      giverestrict.chainmail_helmet: true
+      giverestrict.chainmail_leggings: true
+  giverestrict.all_armor:
+    description: Allow /give of all armor
+    children:
+      giverestrict.all_leather_armor: true
+      giverestrict.all_iron_armor: true
+      giverestrict.all_gold_armor: true
+      giverestrict.all_diamond_armor: true
+      giverestrict.all_chainmail_armor: true
+
+  # Spawn eggs
+  giverestrict.all_passive_spawn_egg:
+    description: Allow /give with passive mob spawn eggs
+    children:
+      giverestrict.bat_spawn_egg: true
+      giverestrict.cat_spawn_egg: true
+      giverestrict.chicken_spawn_egg: true
+      giverestrict.cod_spawn_egg: true
+      giverestrict.cow_spawn_egg: true
+      giverestrict.donkey_spawn_egg: true
+      giverestrict.fox_spawn_egg: true
+      giverestrict.horse_spawn_egg: true
+      giverestrict.mooshroom_spawn_egg: true
+      giverestrict.mule_spawn_egg: true
+      giverestrict.ocelot_spawn_egg: true
+      giverestrict.parrot_spawn_egg: true
+      giverestrict.pig_spawn_egg: true
+      giverestrict.pufferfish_spawn_egg: true
+      giverestrict.rabbit_spawn_egg: true
+      giverestrict.salmon_spawn_egg: true
+      giverestrict.sheep_spawn_egg: true
+      giverestrict.skeleton_horse_spawn_egg: true
+      giverestrict.squid_spawn_egg: true
+      giverestrict.tropical_fish_spawn_egg: true
+      giverestrict.turtle_spawn_egg: true
+      giverestrict.villager_spawn_egg: true
+      giverestrict.wandering_trader_spawn_egg: true
+      giverestrict.zombie_horse_spawn_egg: true
+  giverestrict.all_neutral_spawn_egg:
+    description: Allow /give with neutral mob spawn eggs
+    children:
+      giverestrict.bee_spawn_egg: true
+      giverestrict.cave_spider_spawn_egg: true
+      giverestrict.dolphin_spawn_egg: true
+      giverestrict.enderman_spawn_egg: true
+      giverestrict.llama_spawn_egg: true
+      giverestrict.panda_spawn_egg: true
+      giverestrict.polar_bear_spawn_egg: true
+      giverestrict.spider_spawn_egg: true
+      giverestrict.trader_llama_spawn_egg: true
+      giverestrict.wolf_spawn_egg: true
+      giverestrict.zombie_pigman_spawn_egg: true
+  giverestrict.all_hostile_spawn_egg:
+    description: Allow /give with hostile mob spawn eggs
+    children:
+      giverestrict.blaze_spawn_egg: true
+      giverestrict.creeper_spawn_egg: true
+      giverestrict.drowned_spawn_egg: true
+      giverestrict.elder_guardian_spawn_egg: true
+      giverestrict.endermite_spawn_egg: true
+      giverestrict.evoker_spawn_egg: true
+      giverestrict.ghast_spawn_egg: true
+      giverestrict.guardian_spawn_egg: true
+      giverestrict.husk_spawn_egg: true
+      giverestrict.magma_cube_spawn_egg: true
+      giverestrict.phantom_spawn_egg: true
+      giverestrict.pillager_spawn_egg: true
+      giverestrict.ravager_spawn_egg: true
+      giverestrict.shulker_spawn_egg: true
+      giverestrict.silverfish_spawn_egg: true
+      giverestrict.skeleton_spawn_egg: true
+      giverestrict.slime_spawn_egg: true
+      giverestrict.stray_spawn_egg: true
+      giverestrict.vex_spawn_egg: true
+      giverestrict.vindicator_spawn_egg: true
+      giverestrict.witch_spawn_egg: true
+      giverestrict.wither_skeleton_spawn_egg: true
+      giverestrict.zombie_spawn_egg: true
+      giverestrict.zombie_villager_spawn_egg: true
+  giverestrict.all_spawn_egg:
+    description: Allow /give with spawn eggs
+    children:
+      giverestrict.all_passive_spawn_egg: true
+      giverestrict.all_neutral_spawn_egg: true
+      giverestrict.all_hostile_spawn_egg: true
+
+  # Individual items
+  giverestrict.acacia_boat:
+    description: Allow /give with acacia_boat
+    default: op
+  giverestrict.acacia_button:
+    description: Allow /give with acacia_button
+    default: op
+  giverestrict.acacia_door:
+    description: Allow /give with acacia_door
+    default: op
+  giverestrict.acacia_fence:
+    description: Allow /give with acacia_fence
+    default: op
+  giverestrict.acacia_fence_gate:
+    description: Allow /give with acacia_fence_gate
+    default: op
+  giverestrict.acacia_leaves:
+    description: Allow /give with acacia_leaves
+    default: op
+  giverestrict.acacia_log:
+    description: Allow /give with acacia_log
+    default: op
+  giverestrict.acacia_planks:
+    description: Allow /give with acacia_planks
+    default: op
+  giverestrict.acacia_pressure_plate:
+    description: Allow /give with acacia_pressure_plate
+    default: op
+  giverestrict.acacia_sapling:
+    description: Allow /give with acacia_sapling
+    default: op
+  giverestrict.acacia_sign:
+    description: Allow /give with acacia_sign
+    default: op
+  giverestrict.acacia_slab:
+    description: Allow /give with acacia_slab
+    default: op
+  giverestrict.acacia_stairs:
+    description: Allow /give with acacia_stairs
+    default: op
+  giverestrict.acacia_trapdoor:
+    description: Allow /give with acacia_trapdoor
+    default: op
+  giverestrict.acacia_wood:
+    description: Allow /give with acacia_wood
+    default: op
+  giverestrict.activator_rail:
+    description: Allow /give with activator_rail
+    default: op
+  giverestrict.air:
+    description: Allow /give with air
+    default: op
+  giverestrict.allium:
+    description: Allow /give with allium
+    default: op
+  giverestrict.andesite:
+    description: Allow /give with andesite
+    default: op
+  giverestrict.andesite_slab:
+    description: Allow /give with andesite_slab
+    default: op
+  giverestrict.andesite_stairs:
+    description: Allow /give with andesite_stairs
+    default: op
+  giverestrict.andesite_wall:
+    description: Allow /give with andesite_wall
+    default: op
+  giverestrict.anvil:
+    description: Allow /give with anvil
+    default: op
+  giverestrict.apple:
+    description: Allow /give with apple
+    default: op
+  giverestrict.armor_stand:
+    description: Allow /give with armor_stand
+    default: op
+  giverestrict.arrow:
+    description: Allow /give with arrow
+    default: op
+  giverestrict.azure_bluet:
+    description: Allow /give with azure_bluet
+    default: op
+  giverestrict.baked_potato:
+    description: Allow /give with baked_potato
+    default: op
+  giverestrict.bamboo:
+    description: Allow /give with bamboo
+    default: op
+  giverestrict.barrel:
+    description: Allow /give with barrel
+    default: op
+  giverestrict.barrier:
+    description: Allow /give with barrier
+    default: op
+  giverestrict.bat_spawn_egg:
+    description: Allow /give with bat_spawn_egg
+    default: op
+  giverestrict.beacon:
+    description: Allow /give with beacon
+    default: op
+  giverestrict.bedrock:
+    description: Allow /give with bedrock
+    default: op
+  giverestrict.bee_nest:
+    description: Allow /give with bee_nest
+    default: op
+  giverestrict.bee_spawn_egg:
+    description: Allow /give with bee_spawn_egg
+    default: op
+  giverestrict.beef:
+    description: Allow /give with beef
+    default: op
+  giverestrict.beehive:
+    description: Allow /give with beehive
+    default: op
+  giverestrict.beetroot:
+    description: Allow /give with beetroot
+    default: op
+  giverestrict.beetroot_seeds:
+    description: Allow /give with beetroot_seeds
+    default: op
+  giverestrict.beetroot_soup:
+    description: Allow /give with beetroot_soup
+    default: op
+  giverestrict.bell:
+    description: Allow /give with bell
+    default: op
+  giverestrict.birch_boat:
+    description: Allow /give with birch_boat
+    default: op
+  giverestrict.birch_button:
+    description: Allow /give with birch_button
+    default: op
+  giverestrict.birch_door:
+    description: Allow /give with birch_door
+    default: op
+  giverestrict.birch_fence:
+    description: Allow /give with birch_fence
+    default: op
+  giverestrict.birch_fence_gate:
+    description: Allow /give with birch_fence_gate
+    default: op
+  giverestrict.birch_leaves:
+    description: Allow /give with birch_leaves
+    default: op
+  giverestrict.birch_log:
+    description: Allow /give with birch_log
+    default: op
+  giverestrict.birch_planks:
+    description: Allow /give with birch_planks
+    default: op
+  giverestrict.birch_pressure_plate:
+    description: Allow /give with birch_pressure_plate
+    default: op
+  giverestrict.birch_sapling:
+    description: Allow /give with birch_sapling
+    default: op
+  giverestrict.birch_sign:
+    description: Allow /give with birch_sign
+    default: op
+  giverestrict.birch_slab:
+    description: Allow /give with birch_slab
+    default: op
+  giverestrict.birch_stairs:
+    description: Allow /give with birch_stairs
+    default: op
+  giverestrict.birch_trapdoor:
+    description: Allow /give with birch_trapdoor
+    default: op
+  giverestrict.birch_wood:
+    description: Allow /give with birch_wood
+    default: op
+  giverestrict.black_banner:
+    description: Allow /give with black_banner
+    default: op
+  giverestrict.black_bed:
+    description: Allow /give with black_bed
+    default: op
+  giverestrict.black_carpet:
+    description: Allow /give with black_carpet
+    default: op
+  giverestrict.black_concrete:
+    description: Allow /give with black_concrete
+    default: op
+  giverestrict.black_concrete_powder:
+    description: Allow /give with black_concrete_powder
+    default: op
+  giverestrict.black_dye:
+    description: Allow /give with black_dye
+    default: op
+  giverestrict.black_glazed_terracotta:
+    description: Allow /give with black_glazed_terracotta
+    default: op
+  giverestrict.black_shulker_box:
+    description: Allow /give with black_shulker_box
+    default: op
+  giverestrict.black_stained_glass:
+    description: Allow /give with black_stained_glass
+    default: op
+  giverestrict.black_stained_glass_pane:
+    description: Allow /give with black_stained_glass_pane
+    default: op
+  giverestrict.black_terracotta:
+    description: Allow /give with black_terracotta
+    default: op
+  giverestrict.black_wool:
+    description: Allow /give with black_wool
+    default: op
+  giverestrict.blast_furnace:
+    description: Allow /give with blast_furnace
+    default: op
+  giverestrict.blaze_powder:
+    description: Allow /give with blaze_powder
+    default: op
+  giverestrict.blaze_rod:
+    description: Allow /give with blaze_rod
+    default: op
+  giverestrict.blaze_spawn_egg:
+    description: Allow /give with blaze_spawn_egg
+    default: op
+  giverestrict.blue_banner:
+    description: Allow /give with blue_banner
+    default: op
+  giverestrict.blue_bed:
+    description: Allow /give with blue_bed
+    default: op
+  giverestrict.blue_carpet:
+    description: Allow /give with blue_carpet
+    default: op
+  giverestrict.blue_concrete:
+    description: Allow /give with blue_concrete
+    default: op
+  giverestrict.blue_concrete_powder:
+    description: Allow /give with blue_concrete_powder
+    default: op
+  giverestrict.blue_dye:
+    description: Allow /give with blue_dye
+    default: op
+  giverestrict.blue_glazed_terracotta:
+    description: Allow /give with blue_glazed_terracotta
+    default: op
+  giverestrict.blue_ice:
+    description: Allow /give with blue_ice
+    default: op
+  giverestrict.blue_orchid:
+    description: Allow /give with blue_orchid
+    default: op
+  giverestrict.blue_shulker_box:
+    description: Allow /give with blue_shulker_box
+    default: op
+  giverestrict.blue_stained_glass:
+    description: Allow /give with blue_stained_glass
+    default: op
+  giverestrict.blue_stained_glass_pane:
+    description: Allow /give with blue_stained_glass_pane
+    default: op
+  giverestrict.blue_terracotta:
+    description: Allow /give with blue_terracotta
+    default: op
+  giverestrict.blue_wool:
+    description: Allow /give with blue_wool
+    default: op
+  giverestrict.bone:
+    description: Allow /give with bone
+    default: op
+  giverestrict.bone_block:
+    description: Allow /give with bone_block
+    default: op
+  giverestrict.bone_meal:
+    description: Allow /give with bone_meal
+    default: op
+  giverestrict.book:
+    description: Allow /give with book
+    default: op
+  giverestrict.bookshelf:
+    description: Allow /give with bookshelf
+    default: op
+  giverestrict.bow:
+    description: Allow /give with bow
+    default: op
+  giverestrict.bowl:
+    description: Allow /give with bowl
+    default: op
+  giverestrict.brain_coral:
+    description: Allow /give with brain_coral
+    default: op
+  giverestrict.brain_coral_block:
+    description: Allow /give with brain_coral_block
+    default: op
+  giverestrict.brain_coral_fan:
+    description: Allow /give with brain_coral_fan
+    default: op
+  giverestrict.bread:
+    description: Allow /give with bread
+    default: op
+  giverestrict.brewing_stand:
+    description: Allow /give with brewing_stand
+    default: op
+  giverestrict.brick:
+    description: Allow /give with brick
+    default: op
+  giverestrict.brick_slab:
+    description: Allow /give with brick_slab
+    default: op
+  giverestrict.brick_stairs:
+    description: Allow /give with brick_stairs
+    default: op
+  giverestrict.brick_wall:
+    description: Allow /give with brick_wall
+    default: op
+  giverestrict.bricks:
+    description: Allow /give with bricks
+    default: op
+  giverestrict.brown_banner:
+    description: Allow /give with brown_banner
+    default: op
+  giverestrict.brown_bed:
+    description: Allow /give with brown_bed
+    default: op
+  giverestrict.brown_carpet:
+    description: Allow /give with brown_carpet
+    default: op
+  giverestrict.brown_concrete:
+    description: Allow /give with brown_concrete
+    default: op
+  giverestrict.brown_concrete_powder:
+    description: Allow /give with brown_concrete_powder
+    default: op
+  giverestrict.brown_dye:
+    description: Allow /give with brown_dye
+    default: op
+  giverestrict.brown_glazed_terracotta:
+    description: Allow /give with brown_glazed_terracotta
+    default: op
+  giverestrict.brown_mushroom:
+    description: Allow /give with brown_mushroom
+    default: op
+  giverestrict.brown_mushroom_block:
+    description: Allow /give with brown_mushroom_block
+    default: op
+  giverestrict.brown_shulker_box:
+    description: Allow /give with brown_shulker_box
+    default: op
+  giverestrict.brown_stained_glass:
+    description: Allow /give with brown_stained_glass
+    default: op
+  giverestrict.brown_stained_glass_pane:
+    description: Allow /give with brown_stained_glass_pane
+    default: op
+  giverestrict.brown_terracotta:
+    description: Allow /give with brown_terracotta
+    default: op
+  giverestrict.brown_wool:
+    description: Allow /give with brown_wool
+    default: op
+  giverestrict.bubble_coral:
+    description: Allow /give with bubble_coral
+    default: op
+  giverestrict.bubble_coral_block:
+    description: Allow /give with bubble_coral_block
+    default: op
+  giverestrict.bucket:
+    description: Allow /give with bucket
+    default: op
+  giverestrict.cactus:
+    description: Allow /give with cactus
+    default: op
+  giverestrict.cake:
+    description: Allow /give with cake
+    default: op
+  giverestrict.campfire:
+    description: Allow /give with campfire
+    default: op
+  giverestrict.carrot:
+    description: Allow /give with carrot
+    default: op
+  giverestrict.carrot_on_a_stick:
+    description: Allow /give with carrot_on_a_stick
+    default: op
+  giverestrict.cartography_table:
+    description: Allow /give with cartography_table
+    default: op
+  giverestrict.carved_pumpkin:
+    description: Allow /give with carved_pumpkin
+    default: op
+  giverestrict.cat_spawn_egg:
+    description: Allow /give with cat_spawn_egg
+    default: op
+  giverestrict.cauldron:
+    description: Allow /give with cauldron
+    default: op
+  giverestrict.cave_spider_spawn_egg:
+    description: Allow /give with cave_spider_spawn_egg
+    default: op
+  giverestrict.chain_command_block:
+    description: Allow /give with chain_command_block
+    default: op
+  giverestrict.chainmail_boots:
+    description: Allow /give with chainmail_boots
+    default: op
+  giverestrict.chainmail_chestplate:
+    description: Allow /give with chainmail_chestplate
+    default: op
+  giverestrict.chainmail_helmet:
+    description: Allow /give with chainmail_helmet
+    default: op
+  giverestrict.chainmail_leggings:
+    description: Allow /give with chainmail_leggings
+    default: op
+  giverestrict.charcoal:
+    description: Allow /give with charcoal
+    default: op
+  giverestrict.chest:
+    description: Allow /give with chest
+    default: op
+  giverestrict.chest_minecart:
+    description: Allow /give with chest_minecart
+    default: op
+  giverestrict.chicken:
+    description: Allow /give with chicken
+    default: op
+  giverestrict.chicken_spawn_egg:
+    description: Allow /give with chicken_spawn_egg
+    default: op
+  giverestrict.chipped_anvil:
+    description: Allow /give with chipped_anvil
+    default: op
+  giverestrict.chiseled_quartz_block:
+    description: Allow /give with chiseled_quartz_block
+    default: op
+  giverestrict.chiseled_red_sandstone:
+    description: Allow /give with chiseled_red_sandstone
+    default: op
+  giverestrict.chiseled_sandstone:
+    description: Allow /give with chiseled_sandstone
+    default: op
+  giverestrict.chiseled_stone_bricks:
+    description: Allow /give with chiseled_stone_bricks
+    default: op
+  giverestrict.chorus_flower:
+    description: Allow /give with chorus_flower
+    default: op
+  giverestrict.chorus_fruit:
+    description: Allow /give with chorus_fruit
+    default: op
+  giverestrict.chorus_plant:
+    description: Allow /give with chorus_plant
+    default: op
+  giverestrict.clay:
+    description: Allow /give with clay
+    default: op
+  giverestrict.clay_ball:
+    description: Allow /give with clay_ball
+    default: op
+  giverestrict.clock:
+    description: Allow /give with clock
+    default: op
+  giverestrict.coal:
+    description: Allow /give with coal
+    default: op
+  giverestrict.coal_block:
+    description: Allow /give with coal_block
+    default: op
+  giverestrict.coal_ore:
+    description: Allow /give with coal_ore
+    default: op
+  giverestrict.coarse_dirt:
+    description: Allow /give with coarse_dirt
+    default: op
+  giverestrict.cobblestone:
+    description: Allow /give with cobblestone
+    default: op
+  giverestrict.cobblestone_slab:
+    description: Allow /give with cobblestone_slab
+    default: op
+  giverestrict.cobblestone_stairs:
+    description: Allow /give with cobblestone_stairs
+    default: op
+  giverestrict.cobblestone_wall:
+    description: Allow /give with cobblestone_wall
+    default: op
+  giverestrict.cobweb:
+    description: Allow /give with cobweb
+    default: op
+  giverestrict.cocoa_beans:
+    description: Allow /give with cocoa_beans
+    default: op
+  giverestrict.cod:
+    description: Allow /give with cod
+    default: op
+  giverestrict.cod_bucket:
+    description: Allow /give with cod_bucket
+    default: op
+  giverestrict.cod_spawn_egg:
+    description: Allow /give with cod_spawn_egg
+    default: op
+  giverestrict.command_block:
+    description: Allow /give with command_block
+    default: op
+  giverestrict.command_block_minecart:
+    description: Allow /give with command_block_minecart
+    default: op
+  giverestrict.comparator:
+    description: Allow /give with comparator
+    default: op
+  giverestrict.compass:
+    description: Allow /give with compass
+    default: op
+  giverestrict.composter:
+    description: Allow /give with composter
+    default: op
+  giverestrict.conduit:
+    description: Allow /give with conduit
+    default: op
+  giverestrict.cooked_beef:
+    description: Allow /give with cooked_beef
+    default: op
+  giverestrict.cooked_chicken:
+    description: Allow /give with cooked_chicken
+    default: op
+  giverestrict.cooked_cod:
+    description: Allow /give with cooked_cod
+    default: op
+  giverestrict.cooked_mutton:
+    description: Allow /give with cooked_mutton
+    default: op
+  giverestrict.cooked_porkchop:
+    description: Allow /give with cooked_porkchop
+    default: op
+  giverestrict.cooked_rabbit:
+    description: Allow /give with cooked_rabbit
+    default: op
+  giverestrict.cooked_salmon:
+    description: Allow /give with cooked_salmon
+    default: op
+  giverestrict.cookie:
+    description: Allow /give with cookie
+    default: op
+  giverestrict.cornflower:
+    description: Allow /give with cornflower
+    default: op
+  giverestrict.cow_spawn_egg:
+    description: Allow /give with cow_spawn_egg
+    default: op
+  giverestrict.cracked_stone_bricks:
+    description: Allow /give with cracked_stone_bricks
+    default: op
+  giverestrict.crafting_table:
+    description: Allow /give with crafting_table
+    default: op
+  giverestrict.creeper_banner_pattern:
+    description: Allow /give with creeper_banner_pattern
+    default: op
+  giverestrict.creeper_head:
+    description: Allow /give with creeper_head
+    default: op
+  giverestrict.creeper_spawn_egg:
+    description: Allow /give with creeper_spawn_egg
+    default: op
+  giverestrict.crossbow:
+    description: Allow /give with crossbow
+    default: op
+  giverestrict.cut_red_sandstone:
+    description: Allow /give with cut_red_sandstone
+    default: op
+  giverestrict.cut_red_sandstone_slab:
+    description: Allow /give with cut_red_sandstone_slab
+    default: op
+  giverestrict.cyan_banner:
+    description: Allow /give with cyan_banner
+    default: op
+  giverestrict.cyan_bed:
+    description: Allow /give with cyan_bed
+    default: op
+  giverestrict.cyan_carpet:
+    description: Allow /give with cyan_carpet
+    default: op
+  giverestrict.cyan_concrete:
+    description: Allow /give with cyan_concrete
+    default: op
+  giverestrict.cyan_concrete_powder:
+    description: Allow /give with cyan_concrete_powder
+    default: op
+  giverestrict.cyan_dye:
+    description: Allow /give with cyan_dye
+    default: op
+  giverestrict.cyan_glazed_terracotta:
+    description: Allow /give with cyan_glazed_terracotta
+    default: op
+  giverestrict.cyan_shulker_box:
+    description: Allow /give with cyan_shulker_box
+    default: op
+  giverestrict.cyan_stained_glass:
+    description: Allow /give with cyan_stained_glass
+    default: op
+  giverestrict.cyan_stained_glass_pane:
+    description: Allow /give with cyan_stained_glass_pane
+    default: op
+  giverestrict.cyan_terracotta:
+    description: Allow /give with cyan_terracotta
+    default: op
+  giverestrict.cyan_wool:
+    description: Allow /give with cyan_wool
+    default: op
+  giverestrict.damaged_anvil:
+    description: Allow /give with damaged_anvil
+    default: op
+  giverestrict.dandelion:
+    description: Allow /give with dandelion
+    default: op
+  giverestrict.dark_oak_boat:
+    description: Allow /give with dark_oak_boat
+    default: op
+  giverestrict.dark_oak_button:
+    description: Allow /give with dark_oak_button
+    default: op
+  giverestrict.dark_oak_door:
+    description: Allow /give with dark_oak_door
+    default: op
+  giverestrict.dark_oak_fence:
+    description: Allow /give with dark_oak_fence
+    default: op
+  giverestrict.dark_oak_fence_gate:
+    description: Allow /give with dark_oak_fence_gate
+    default: op
+  giverestrict.dark_oak_leaves:
+    description: Allow /give with dark_oak_leaves
+    default: op
+  giverestrict.dark_oak_log:
+    description: Allow /give with dark_oak_log
+    default: op
+  giverestrict.dark_oak_planks:
+    description: Allow /give with dark_oak_planks
+    default: op
+  giverestrict.dark_oak_pressure_plate:
+    description: Allow /give with dark_oak_pressure_plate
+    default: op
+  giverestrict.dark_oak_sapling:
+    description: Allow /give with dark_oak_sapling
+    default: op
+  giverestrict.dark_oak_sign:
+    description: Allow /give with dark_oak_sign
+    default: op
+  giverestrict.dark_oak_slab:
+    description: Allow /give with dark_oak_slab
+    default: op
+  giverestrict.dark_oak_stairs:
+    description: Allow /give with dark_oak_stairs
+    default: op
+  giverestrict.dark_oak_trapdoor:
+    description: Allow /give with dark_oak_trapdoor
+    default: op
+  giverestrict.dark_oak_wood:
+    description: Allow /give with dark_oak_wood
+    default: op
+  giverestrict.dark_prismarine:
+    description: Allow /give with dark_prismarine
+    default: op
+  giverestrict.dark_prismarine_slab:
+    description: Allow /give with dark_prismarine_slab
+    default: op
+  giverestrict.dark_prismarine_stairs:
+    description: Allow /give with dark_prismarine_stairs
+    default: op
+  giverestrict.daylight_detector:
+    description: Allow /give with daylight_detector
+    default: op
+  giverestrict.dead_brain_coral:
+    description: Allow /give with dead_brain_coral
+    default: op
+  giverestrict.dead_brain_coral_block:
+    description: Allow /give with dead_brain_coral_block
+    default: op
+  giverestrict.dead_brain_coral_fan:
+    description: Allow /give with dead_brain_coral_fan
+    default: op
+  giverestrict.dead_bubble_coral:
+    description: Allow /give with dead_bubble_coral
+    default: op
+  giverestrict.dead_bubble_coral_block:
+    description: Allow /give with dead_bubble_coral_block
+    default: op
+  giverestrict.dead_bush:
+    description: Allow /give with dead_bush
+    default: op
+  giverestrict.dead_fire_coral:
+    description: Allow /give with dead_fire_coral
+    default: op
+  giverestrict.dead_fire_coral_block:
+    description: Allow /give with dead_fire_coral_block
+    default: op
+  giverestrict.dead_fire_coral_fan:
+    description: Allow /give with dead_fire_coral_fan
+    default: op
+  giverestrict.dead_horn_coral:
+    description: Allow /give with dead_horn_coral
+    default: op
+  giverestrict.dead_horn_coral_block:
+    description: Allow /give with dead_horn_coral_block
+    default: op
+  giverestrict.dead_horn_coral_fan:
+    description: Allow /give with dead_horn_coral_fan
+    default: op
+  giverestrict.dead_tube_coral:
+    description: Allow /give with dead_tube_coral
+    default: op
+  giverestrict.dead_tube_coral_block:
+    description: Allow /give with dead_tube_coral_block
+    default: op
+  giverestrict.dead_tube_coral_fan:
+    description: Allow /give with dead_tube_coral_fan
+    default: op
+  giverestrict.debug_stick:
+    description: Allow /give with debug_stick
+    default: op
+  giverestrict.detector_rail:
+    description: Allow /give with detector_rail
+    default: op
+  giverestrict.diamond:
+    description: Allow /give with diamond
+    default: op
+  giverestrict.diamond_axe:
+    description: Allow /give with diamond_axe
+    default: op
+  giverestrict.diamond_block:
+    description: Allow /give with diamond_block
+    default: op
+  giverestrict.diamond_boots:
+    description: Allow /give with diamond_boots
+    default: op
+  giverestrict.diamond_chestplate:
+    description: Allow /give with diamond_chestplate
+    default: op
+  giverestrict.diamond_helmet:
+    description: Allow /give with diamond_helmet
+    default: op
+  giverestrict.diamond_hoe:
+    description: Allow /give with diamond_hoe
+    default: op
+  giverestrict.diamond_horse_armor:
+    description: Allow /give with diamond_horse_armor
+    default: op
+  giverestrict.diamond_leggings:
+    description: Allow /give with diamond_leggings
+    default: op
+  giverestrict.diamond_ore:
+    description: Allow /give with diamond_ore
+    default: op
+  giverestrict.diamond_pickaxe:
+    description: Allow /give with diamond_pickaxe
+    default: op
+  giverestrict.diamond_shovel:
+    description: Allow /give with diamond_shovel
+    default: op
+  giverestrict.diamond_sword:
+    description: Allow /give with diamond_sword
+    default: op
+  giverestrict.diorite:
+    description: Allow /give with diorite
+    default: op
+  giverestrict.diorite_slab:
+    description: Allow /give with diorite_slab
+    default: op
+  giverestrict.diorite_stairs:
+    description: Allow /give with diorite_stairs
+    default: op
+  giverestrict.diorite_wall:
+    description: Allow /give with diorite_wall
+    default: op
+  giverestrict.dirt:
+    description: Allow /give with dirt
+    default: op
+  giverestrict.dispenser:
+    description: Allow /give with dispenser
+    default: op
+  giverestrict.dolphin_spawn_egg:
+    description: Allow /give with dolphin_spawn_egg
+    default: op
+  giverestrict.donkey_spawn_egg:
+    description: Allow /give with donkey_spawn_egg
+    default: op
+  giverestrict.dragon_breath:
+    description: Allow /give with dragon_breath
+    default: op
+  giverestrict.dragon_egg:
+    description: Allow /give with dragon_egg
+    default: op
+  giverestrict.dragon_head:
+    description: Allow /give with dragon_head
+    default: op
+  giverestrict.dried_kelp:
+    description: Allow /give with dried_kelp
+    default: op
+  giverestrict.dried_kelp_block:
+    description: Allow /give with dried_kelp_block
+    default: op
+  giverestrict.dropper:
+    description: Allow /give with dropper
+    default: op
+  giverestrict.drowned_spawn_egg:
+    description: Allow /give with drowned_spawn_egg
+    default: op
+  giverestrict.egg:
+    description: Allow /give with egg
+    default: op
+  giverestrict.elder_guardian_spawn_egg:
+    description: Allow /give with elder_guardian_spawn_egg
+    default: op
+  giverestrict.elytra:
+    description: Allow /give with elytra
+    default: op
+  giverestrict.emerald:
+    description: Allow /give with emerald
+    default: op
+  giverestrict.emerald_block:
+    description: Allow /give with emerald_block
+    default: op
+  giverestrict.emerald_ore:
+    description: Allow /give with emerald_ore
+    default: op
+  giverestrict.enchanted_book:
+    description: Allow /give with enchanted_book
+    default: op
+  giverestrict.enchanted_golden_apple:
+    description: Allow /give with enchanted_golden_apple
+    default: op
+  giverestrict.enchanting_table:
+    description: Allow /give with enchanting_table
+    default: op
+  giverestrict.end_crystal:
+    description: Allow /give with end_crystal
+    default: op
+  giverestrict.end_portal_frame:
+    description: Allow /give with end_portal_frame
+    default: op
+  giverestrict.end_rod:
+    description: Allow /give with end_rod
+    default: op
+  giverestrict.end_stone:
+    description: Allow /give with end_stone
+    default: op
+  giverestrict.end_stone_brick_slab:
+    description: Allow /give with end_stone_brick_slab
+    default: op
+  giverestrict.end_stone_brick_stairs:
+    description: Allow /give with end_stone_brick_stairs
+    default: op
+  giverestrict.end_stone_brick_wall:
+    description: Allow /give with end_stone_brick_wall
+    default: op
+  giverestrict.end_stone_bricks:
+    description: Allow /give with end_stone_bricks
+    default: op
+  giverestrict.ender_chest:
+    description: Allow /give with ender_chest
+    default: op
+  giverestrict.ender_eye:
+    description: Allow /give with ender_eye
+    default: op
+  giverestrict.ender_pearl:
+    description: Allow /give with ender_pearl
+    default: op
+  giverestrict.enderman_spawn_egg:
+    description: Allow /give with enderman_spawn_egg
+    default: op
+  giverestrict.endermite_spawn_egg:
+    description: Allow /give with endermite_spawn_egg
+    default: op
+  giverestrict.evoker_spawn_egg:
+    description: Allow /give with evoker_spawn_egg
+    default: op
+  giverestrict.experience_bottle:
+    description: Allow /give with experience_bottle
+    default: op
+  giverestrict.farmland:
+    description: Allow /give with farmland
+    default: op
+  giverestrict.feather:
+    description: Allow /give with feather
+    default: op
+  giverestrict.fermented_spider_eye:
+    description: Allow /give with fermented_spider_eye
+    default: op
+  giverestrict.fern:
+    description: Allow /give with fern
+    default: op
+  giverestrict.filled_map:
+    description: Allow /give with filled_map
+    default: op
+  giverestrict.fire_charge:
+    description: Allow /give with fire_charge
+    default: op
+  giverestrict.fire_coral:
+    description: Allow /give with fire_coral
+    default: op
+  giverestrict.fire_coral_block:
+    description: Allow /give with fire_coral_block
+    default: op
+  giverestrict.fire_coral_fan:
+    description: Allow /give with fire_coral_fan
+    default: op
+  giverestrict.firework_rocket:
+    description: Allow /give with firework_rocket
+    default: op
+  giverestrict.firework_star:
+    description: Allow /give with firework_star
+    default: op
+  giverestrict.fishing_rod:
+    description: Allow /give with fishing_rod
+    default: op
+  giverestrict.fletching_table:
+    description: Allow /give with fletching_table
+    default: op
+  giverestrict.flint:
+    description: Allow /give with flint
+    default: op
+  giverestrict.flint_and_steel:
+    description: Allow /give with flint_and_steel
+    default: op
+  giverestrict.flower_banner_pattern:
+    description: Allow /give with flower_banner_pattern
+    default: op
+  giverestrict.flower_pot:
+    description: Allow /give with flower_pot
+    default: op
+  giverestrict.fox_spawn_egg:
+    description: Allow /give with fox_spawn_egg
+    default: op
+  giverestrict.furnace:
+    description: Allow /give with furnace
+    default: op
+  giverestrict.furnace_minecart:
+    description: Allow /give with furnace_minecart
+    default: op
+  giverestrict.ghast_spawn_egg:
+    description: Allow /give with ghast_spawn_egg
+    default: op
+  giverestrict.ghast_tear:
+    description: Allow /give with ghast_tear
+    default: op
+  giverestrict.glass:
+    description: Allow /give with glass
+    default: op
+  giverestrict.glass_bottle:
+    description: Allow /give with glass_bottle
+    default: op
+  giverestrict.glass_pane:
+    description: Allow /give with glass_pane
+    default: op
+  giverestrict.glistering_melon_slice:
+    description: Allow /give with glistering_melon_slice
+    default: op
+  giverestrict.globe_banner_pattern:
+    description: Allow /give with globe_banner_pattern
+    default: op
+  giverestrict.glowstone:
+    description: Allow /give with glowstone
+    default: op
+  giverestrict.glowstone_dust:
+    description: Allow /give with glowstone_dust
+    default: op
+  giverestrict.gold_block:
+    description: Allow /give with gold_block
+    default: op
+  giverestrict.gold_ingot:
+    description: Allow /give with gold_ingot
+    default: op
+  giverestrict.gold_nugget:
+    description: Allow /give with gold_nugget
+    default: op
+  giverestrict.gold_ore:
+    description: Allow /give with gold_ore
+    default: op
+  giverestrict.golden_apple:
+    description: Allow /give with golden_apple
+    default: op
+  giverestrict.golden_axe:
+    description: Allow /give with golden_axe
+    default: op
+  giverestrict.golden_boots:
+    description: Allow /give with golden_boots
+    default: op
+  giverestrict.golden_carrot:
+    description: Allow /give with golden_carrot
+    default: op
+  giverestrict.golden_chestplate:
+    description: Allow /give with golden_chestplate
+    default: op
+  giverestrict.golden_helmet:
+    description: Allow /give with golden_helmet
+    default: op
+  giverestrict.golden_hoe:
+    description: Allow /give with golden_hoe
+    default: op
+  giverestrict.golden_horse_armor:
+    description: Allow /give with golden_horse_armor
+    default: op
+  giverestrict.golden_leggings:
+    description: Allow /give with golden_leggings
+    default: op
+  giverestrict.golden_pickaxe:
+    description: Allow /give with golden_pickaxe
+    default: op
+  giverestrict.golden_shovel:
+    description: Allow /give with golden_shovel
+    default: op
+  giverestrict.golden_sword:
+    description: Allow /give with golden_sword
+    default: op
+  giverestrict.granite:
+    description: Allow /give with granite
+    default: op
+  giverestrict.granite_slab:
+    description: Allow /give with granite_slab
+    default: op
+  giverestrict.granite_stairs:
+    description: Allow /give with granite_stairs
+    default: op
+  giverestrict.granite_wall:
+    description: Allow /give with granite_wall
+    default: op
+  giverestrict.grass:
+    description: Allow /give with grass
+    default: op
+  giverestrict.grass_block:
+    description: Allow /give with grass_block
+    default: op
+  giverestrict.grass_path:
+    description: Allow /give with grass_path
+    default: op
+  giverestrict.gravel:
+    description: Allow /give with gravel
+    default: op
+  giverestrict.gray_banner:
+    description: Allow /give with gray_banner
+    default: op
+  giverestrict.gray_bed:
+    description: Allow /give with gray_bed
+    default: op
+  giverestrict.gray_carpet:
+    description: Allow /give with gray_carpet
+    default: op
+  giverestrict.gray_concrete:
+    description: Allow /give with gray_concrete
+    default: op
+  giverestrict.gray_concrete_powder:
+    description: Allow /give with gray_concrete_powder
+    default: op
+  giverestrict.gray_dye:
+    description: Allow /give with gray_dye
+    default: op
+  giverestrict.gray_glazed_terracotta:
+    description: Allow /give with gray_glazed_terracotta
+    default: op
+  giverestrict.gray_shulker_box:
+    description: Allow /give with gray_shulker_box
+    default: op
+  giverestrict.gray_stained_glass:
+    description: Allow /give with gray_stained_glass
+    default: op
+  giverestrict.gray_stained_glass_pane:
+    description: Allow /give with gray_stained_glass_pane
+    default: op
+  giverestrict.gray_terracotta:
+    description: Allow /give with gray_terracotta
+    default: op
+  giverestrict.gray_wool:
+    description: Allow /give with gray_wool
+    default: op
+  giverestrict.green_banner:
+    description: Allow /give with green_banner
+    default: op
+  giverestrict.green_bed:
+    description: Allow /give with green_bed
+    default: op
+  giverestrict.green_carpet:
+    description: Allow /give with green_carpet
+    default: op
+  giverestrict.green_concrete:
+    description: Allow /give with green_concrete
+    default: op
+  giverestrict.green_concrete_powder:
+    description: Allow /give with green_concrete_powder
+    default: op
+  giverestrict.green_dye:
+    description: Allow /give with green_dye
+    default: op
+  giverestrict.green_glazed_terracotta:
+    description: Allow /give with green_glazed_terracotta
+    default: op
+  giverestrict.green_shulker_box:
+    description: Allow /give with green_shulker_box
+    default: op
+  giverestrict.green_stained_glass:
+    description: Allow /give with green_stained_glass
+    default: op
+  giverestrict.green_stained_glass_pane:
+    description: Allow /give with green_stained_glass_pane
+    default: op
+  giverestrict.green_terracotta:
+    description: Allow /give with green_terracotta
+    default: op
+  giverestrict.green_wool:
+    description: Allow /give with green_wool
+    default: op
+  giverestrict.grindstone:
+    description: Allow /give with grindstone
+    default: op
+  giverestrict.guardian_spawn_egg:
+    description: Allow /give with guardian_spawn_egg
+    default: op
+  giverestrict.gunpowder:
+    description: Allow /give with gunpowder
+    default: op
+  giverestrict.hay_block:
+    description: Allow /give with hay_block
+    default: op
+  giverestrict.heart_of_the_sea:
+    description: Allow /give with heart_of_the_sea
+    default: op
+  giverestrict.heavy_weighted_pressure_plate:
+    description: Allow /give with heavy_weighted_pressure_plate
+    default: op
+  giverestrict.honey_block:
+    description: Allow /give with honey_block
+    default: op
+  giverestrict.honey_bottle:
+    description: Allow /give with honey_bottle
+    default: op
+  giverestrict.honeycomb:
+    description: Allow /give with honeycomb
+    default: op
+  giverestrict.honeycomb_block:
+    description: Allow /give with honeycomb_block
+    default: op
+  giverestrict.hopper:
+    description: Allow /give with hopper
+    default: op
+  giverestrict.hopper_minecart:
+    description: Allow /give with hopper_minecart
+    default: op
+  giverestrict.horn_coral:
+    description: Allow /give with horn_coral
+    default: op
+  giverestrict.horn_coral_block:
+    description: Allow /give with horn_coral_block
+    default: op
+  giverestrict.horn_coral_fan:
+    description: Allow /give with horn_coral_fan
+    default: op
+  giverestrict.horse_spawn_egg:
+    description: Allow /give with horse_spawn_egg
+    default: op
+  giverestrict.husk_spawn_egg:
+    description: Allow /give with husk_spawn_egg
+    default: op
+  giverestrict.ice:
+    description: Allow /give with ice
+    default: op
+  giverestrict.infested_chiseled_stone_bricks:
+    description: Allow /give with infested_chiseled_stone_bricks
+    default: op
+  giverestrict.infested_cobblestone:
+    description: Allow /give with infested_cobblestone
+    default: op
+  giverestrict.infested_cracked_stone_bricks:
+    description: Allow /give with infested_cracked_stone_bricks
+    default: op
+  giverestrict.infested_mossy_stone_bricks:
+    description: Allow /give with infested_mossy_stone_bricks
+    default: op
+  giverestrict.infested_stone:
+    description: Allow /give with infested_stone
+    default: op
+  giverestrict.infested_stone_bricks:
+    description: Allow /give with infested_stone_bricks
+    default: op
+  giverestrict.ink_sac:
+    description: Allow /give with ink_sac
+    default: op
+  giverestrict.iron_axe:
+    description: Allow /give with iron_axe
+    default: op
+  giverestrict.iron_bars:
+    description: Allow /give with iron_bars
+    default: op
+  giverestrict.iron_block:
+    description: Allow /give with iron_block
+    default: op
+  giverestrict.iron_boots:
+    description: Allow /give with iron_boots
+    default: op
+  giverestrict.iron_chestplate:
+    description: Allow /give with iron_chestplate
+    default: op
+  giverestrict.iron_door:
+    description: Allow /give with iron_door
+    default: op
+  giverestrict.iron_helmet:
+    description: Allow /give with iron_helmet
+    default: op
+  giverestrict.iron_hoe:
+    description: Allow /give with iron_hoe
+    default: op
+  giverestrict.iron_horse_armor:
+    description: Allow /give with iron_horse_armor
+    default: op
+  giverestrict.iron_ingot:
+    description: Allow /give with iron_ingot
+    default: op
+  giverestrict.iron_leggings:
+    description: Allow /give with iron_leggings
+    default: op
+  giverestrict.iron_nugget:
+    description: Allow /give with iron_nugget
+    default: op
+  giverestrict.iron_ore:
+    description: Allow /give with iron_ore
+    default: op
+  giverestrict.iron_pickaxe:
+    description: Allow /give with iron_pickaxe
+    default: op
+  giverestrict.iron_shovel:
+    description: Allow /give with iron_shovel
+    default: op
+  giverestrict.iron_sword:
+    description: Allow /give with iron_sword
+    default: op
+  giverestrict.iron_trapdoor:
+    description: Allow /give with iron_trapdoor
+    default: op
+  giverestrict.item_frame:
+    description: Allow /give with item_frame
+    default: op
+  giverestrict.jack_o_lantern:
+    description: Allow /give with jack_o_lantern
+    default: op
+  giverestrict.jigsaw:
+    description: Allow /give with jigsaw
+    default: op
+  giverestrict.jukebox:
+    description: Allow /give with jukebox
+    default: op
+  giverestrict.jungle_boat:
+    description: Allow /give with jungle_boat
+    default: op
+  giverestrict.jungle_button:
+    description: Allow /give with jungle_button
+    default: op
+  giverestrict.jungle_door:
+    description: Allow /give with jungle_door
+    default: op
+  giverestrict.jungle_fence:
+    description: Allow /give with jungle_fence
+    default: op
+  giverestrict.jungle_fence_gate:
+    description: Allow /give with jungle_fence_gate
+    default: op
+  giverestrict.jungle_leaves:
+    description: Allow /give with jungle_leaves
+    default: op
+  giverestrict.jungle_log:
+    description: Allow /give with jungle_log
+    default: op
+  giverestrict.jungle_planks:
+    description: Allow /give with jungle_planks
+    default: op
+  giverestrict.jungle_pressure_plate:
+    description: Allow /give with jungle_pressure_plate
+    default: op
+  giverestrict.jungle_sapling:
+    description: Allow /give with jungle_sapling
+    default: op
+  giverestrict.jungle_sign:
+    description: Allow /give with jungle_sign
+    default: op
+  giverestrict.jungle_slab:
+    description: Allow /give with jungle_slab
+    default: op
+  giverestrict.jungle_stairs:
+    description: Allow /give with jungle_stairs
+    default: op
+  giverestrict.jungle_trapdoor:
+    description: Allow /give with jungle_trapdoor
+    default: op
+  giverestrict.jungle_wood:
+    description: Allow /give with jungle_wood
+    default: op
+  giverestrict.kelp:
+    description: Allow /give with kelp
+    default: op
+  giverestrict.knowledge_block:
+    description: Allow /give with knowledge_block
+    default: op
+  giverestrict.ladder:
+    description: Allow /give with ladder
+    default: op
+  giverestrict.lantern:
+    description: Allow /give with lantern
+    default: op
+  giverestrict.lapis_block:
+    description: Allow /give with lapis_block
+    default: op
+  giverestrict.lapis_lazuli:
+    description: Allow /give with lapis_lazuli
+    default: op
+  giverestrict.lapis_ore:
+    description: Allow /give with lapis_ore
+    default: op
+  giverestrict.large_fern:
+    description: Allow /give with large_fern
+    default: op
+  giverestrict.lava_bucket:
+    description: Allow /give with lava_bucket
+    default: op
+  giverestrict.lead:
+    description: Allow /give with lead
+    default: op
+  giverestrict.leather:
+    description: Allow /give with leather
+    default: op
+  giverestrict.leather_boots:
+    description: Allow /give with leather_boots
+    default: op
+  giverestrict.leather_chestplate:
+    description: Allow /give with leather_chestplate
+    default: op
+  giverestrict.leather_helmet:
+    description: Allow /give with leather_helmet
+    default: op
+  giverestrict.leather_horse_armor:
+    description: Allow /give with leather_horse_armor
+    default: op
+  giverestrict.leather_leggings:
+    description: Allow /give with leather_leggings
+    default: op
+  giverestrict.lectern:
+    description: Allow /give with lectern
+    default: op
+  giverestrict.lever:
+    description: Allow /give with lever
+    default: op
+  giverestrict.light_blue_banner:
+    description: Allow /give with light_blue_banner
+    default: op
+  giverestrict.light_blue_bed:
+    description: Allow /give with light_blue_bed
+    default: op
+  giverestrict.light_blue_carpet:
+    description: Allow /give with light_blue_carpet
+    default: op
+  giverestrict.light_blue_concrete:
+    description: Allow /give with light_blue_concrete
+    default: op
+  giverestrict.light_blue_concrete_powder:
+    description: Allow /give with light_blue_concrete_powder
+    default: op
+  giverestrict.light_blue_dye:
+    description: Allow /give with light_blue_dye
+    default: op
+  giverestrict.light_blue_glazed_terracotta:
+    description: Allow /give with light_blue_glazed_terracotta
+    default: op
+  giverestrict.light_blue_shulker_box:
+    description: Allow /give with light_blue_shulker_box
+    default: op
+  giverestrict.light_blue_stained_glass:
+    description: Allow /give with light_blue_stained_glass
+    default: op
+  giverestrict.light_blue_stained_glass_pane:
+    description: Allow /give with light_blue_stained_glass_pane
+    default: op
+  giverestrict.light_blue_terracotta:
+    description: Allow /give with light_blue_terracotta
+    default: op
+  giverestrict.light_blue_wool:
+    description: Allow /give with light_blue_wool
+    default: op
+  giverestrict.light_gray_banner:
+    description: Allow /give with light_gray_banner
+    default: op
+  giverestrict.light_gray_bed:
+    description: Allow /give with light_gray_bed
+    default: op
+  giverestrict.light_gray_carpet:
+    description: Allow /give with light_gray_carpet
+    default: op
+  giverestrict.light_gray_concrete:
+    description: Allow /give with light_gray_concrete
+    default: op
+  giverestrict.light_gray_concrete_powder:
+    description: Allow /give with light_gray_concrete_powder
+    default: op
+  giverestrict.light_gray_dye:
+    description: Allow /give with light_gray_dye
+    default: op
+  giverestrict.light_gray_glazed_terracotta:
+    description: Allow /give with light_gray_glazed_terracotta
+    default: op
+  giverestrict.light_gray_shulker_box:
+    description: Allow /give with light_gray_shulker_box
+    default: op
+  giverestrict.light_gray_stained_glass:
+    description: Allow /give with light_gray_stained_glass
+    default: op
+  giverestrict.light_gray_stained_glass_pane:
+    description: Allow /give with light_gray_stained_glass_pane
+    default: op
+  giverestrict.light_gray_terracotta:
+    description: Allow /give with light_gray_terracotta
+    default: op
+  giverestrict.light_gray_wool:
+    description: Allow /give with light_gray_wool
+    default: op
+  giverestrict.light_weighted_pressure_plate:
+    description: Allow /give with light_weighted_pressure_plate
+    default: op
+  giverestrict.lilac:
+    description: Allow /give with lilac
+    default: op
+  giverestrict.lily_of_the_valley:
+    description: Allow /give with lily_of_the_valley
+    default: op
+  giverestrict.lily_pad:
+    description: Allow /give with lily_pad
+    default: op
+  giverestrict.lime_banner:
+    description: Allow /give with lime_banner
+    default: op
+  giverestrict.lime_bed:
+    description: Allow /give with lime_bed
+    default: op
+  giverestrict.lime_carpet:
+    description: Allow /give with lime_carpet
+    default: op
+  giverestrict.lime_concrete:
+    description: Allow /give with lime_concrete
+    default: op
+  giverestrict.lime_concrete_powder:
+    description: Allow /give with lime_concrete_powder
+    default: op
+  giverestrict.lime_dye:
+    description: Allow /give with lime_dye
+    default: op
+  giverestrict.lime_glazed_terracotta:
+    description: Allow /give with lime_glazed_terracotta
+    default: op
+  giverestrict.lime_shulker_box:
+    description: Allow /give with lime_shulker_box
+    default: op
+  giverestrict.lime_stained_glass:
+    description: Allow /give with lime_stained_glass
+    default: op
+  giverestrict.lime_stained_glass_pane:
+    description: Allow /give with lime_stained_glass_pane
+    default: op
+  giverestrict.lime_terracotta:
+    description: Allow /give with lime_terracotta
+    default: op
+  giverestrict.lime_wool:
+    description: Allow /give with lime_wool
+    default: op
+  giverestrict.lingering_potion:
+    description: Allow /give with lingering_potion
+    default: op
+  giverestrict.llama_spawn_egg:
+    description: Allow /give with llama_spawn_egg
+    default: op
+  giverestrict.loom:
+    description: Allow /give with loom
+    default: op
+  giverestrict.magenta_banner:
+    description: Allow /give with magenta_banner
+    default: op
+  giverestrict.magenta_bed:
+    description: Allow /give with magenta_bed
+    default: op
+  giverestrict.magenta_carpet:
+    description: Allow /give with magenta_carpet
+    default: op
+  giverestrict.magenta_concrete:
+    description: Allow /give with magenta_concrete
+    default: op
+  giverestrict.magenta_concrete_powder:
+    description: Allow /give with magenta_concrete_powder
+    default: op
+  giverestrict.magenta_dye:
+    description: Allow /give with magenta_dye
+    default: op
+  giverestrict.magenta_glazed_terracotta:
+    description: Allow /give with magenta_glazed_terracotta
+    default: op
+  giverestrict.magenta_shulker_box:
+    description: Allow /give with magenta_shulker_box
+    default: op
+  giverestrict.magenta_stained_glass:
+    description: Allow /give with magenta_stained_glass
+    default: op
+  giverestrict.magenta_stained_glass_pane:
+    description: Allow /give with magenta_stained_glass_pane
+    default: op
+  giverestrict.magenta_terracotta:
+    description: Allow /give with magenta_terracotta
+    default: op
+  giverestrict.magenta_wool:
+    description: Allow /give with magenta_wool
+    default: op
+  giverestrict.magma_block:
+    description: Allow /give with magma_block
+    default: op
+  giverestrict.magma_cream:
+    description: Allow /give with magma_cream
+    default: op
+  giverestrict.magma_cube_spawn_egg:
+    description: Allow /give with magma_cube_spawn_egg
+    default: op
+  giverestrict.map:
+    description: Allow /give with map
+    default: op
+  giverestrict.melon:
+    description: Allow /give with melon
+    default: op
+  giverestrict.melon_seeds:
+    description: Allow /give with melon_seeds
+    default: op
+  giverestrict.melon_slice:
+    description: Allow /give with melon_slice
+    default: op
+  giverestrict.milk_bucket:
+    description: Allow /give with milk_bucket
+    default: op
+  giverestrict.minecart:
+    description: Allow /give with minecart
+    default: op
+  giverestrict.mojang_banner_pattern:
+    description: Allow /give with mojang_banner_pattern
+    default: op
+  giverestrict.mooshroom_spawn_egg:
+    description: Allow /give with mooshroom_spawn_egg
+    default: op
+  giverestrict.mossy_cobblestone:
+    description: Allow /give with mossy_cobblestone
+    default: op
+  giverestrict.mossy_cobblestone_slab:
+    description: Allow /give with mossy_cobblestone_slab
+    default: op
+  giverestrict.mossy_cobblestone_stairs:
+    description: Allow /give with mossy_cobblestone_stairs
+    default: op
+  giverestrict.mossy_cobblestone_wall:
+    description: Allow /give with mossy_cobblestone_wall
+    default: op
+  giverestrict.mossy_stone_brick_slab:
+    description: Allow /give with mossy_stone_brick_slab
+    default: op
+  giverestrict.mossy_stone_brick_stairs:
+    description: Allow /give with mossy_stone_brick_stairs
+    default: op
+  giverestrict.mossy_stone_brick_wall:
+    description: Allow /give with mossy_stone_brick_wall
+    default: op
+  giverestrict.mossy_stone_bricks:
+    description: Allow /give with mossy_stone_bricks
+    default: op
+  giverestrict.mule_spawn_egg:
+    description: Allow /give with mule_spawn_egg
+    default: op
+  giverestrict.mushroom_stem:
+    description: Allow /give with mushroom_stem
+    default: op
+  giverestrict.mushroom_stew:
+    description: Allow /give with mushroom_stew
+    default: op
+  giverestrict.music_disc_11:
+    description: Allow /give with music_disc_11
+    default: op
+  giverestrict.music_disc_13:
+    description: Allow /give with music_disc_13
+    default: op
+  giverestrict.music_disk_blocks:
+    description: Allow /give with music_disk_blocks
+    default: op
+  giverestrict.music_disk_cat:
+    description: Allow /give with music_disk_cat
+    default: op
+  giverestrict.music_disk_chirp:
+    description: Allow /give with music_disk_chirp
+    default: op
+  giverestrict.music_disk_far:
+    description: Allow /give with music_disk_far
+    default: op
+  giverestrict.music_disk_mall:
+    description: Allow /give with music_disk_mall
+    default: op
+  giverestrict.music_disk_mellohi:
+    description: Allow /give with music_disk_mellohi
+    default: op
+  giverestrict.music_disk_stal:
+    description: Allow /give with music_disk_stal
+    default: op
+  giverestrict.music_disk_strad:
+    description: Allow /give with music_disk_strad
+    default: op
+  giverestrict.music_disk_wait:
+    description: Allow /give with music_disk_wait
+    default: op
+  giverestrict.music_disk_ward:
+    description: Allow /give with music_disk_ward
+    default: op
+  giverestrict.mutton:
+    description: Allow /give with mutton
+    default: op
+  giverestrict.mycelium:
+    description: Allow /give with mycelium
+    default: op
+  giverestrict.name_tag:
+    description: Allow /give with name_tag
+    default: op
+  giverestrict.nautilus_shell:
+    description: Allow /give with nautilus_shell
+    default: op
+  giverestrict.nether_brick:
+    description: Allow /give with nether_brick
+    default: op
+  giverestrict.nether_brick_fence:
+    description: Allow /give with nether_brick_fence
+    default: op
+  giverestrict.nether_brick_slab:
+    description: Allow /give with nether_brick_slab
+    default: op
+  giverestrict.nether_brick_stairs:
+    description: Allow /give with nether_brick_stairs
+    default: op
+  giverestrict.nether_brick_wall:
+    description: Allow /give with nether_brick_wall
+    default: op
+  giverestrict.nether_bricks:
+    description: Allow /give with nether_bricks
+    default: op
+  giverestrict.nether_quartz_ore:
+    description: Allow /give with nether_quartz_ore
+    default: op
+  giverestrict.nether_star:
+    description: Allow /give with nether_star
+    default: op
+  giverestrict.nether_wart:
+    description: Allow /give with nether_wart
+    default: op
+  giverestrict.nether_wart_block:
+    description: Allow /give with nether_wart_block
+    default: op
+  giverestrict.netherrack:
+    description: Allow /give with netherrack
+    default: op
+  giverestrict.note_block:
+    description: Allow /give with note_block
+    default: op
+  giverestrict.oak_boat:
+    description: Allow /give with oak_boat
+    default: op
+  giverestrict.oak_button:
+    description: Allow /give with oak_button
+    default: op
+  giverestrict.oak_door:
+    description: Allow /give with oak_door
+    default: op
+  giverestrict.oak_fence:
+    description: Allow /give with oak_fence
+    default: op
+  giverestrict.oak_fence_gate:
+    description: Allow /give with oak_fence_gate
+    default: op
+  giverestrict.oak_leaves:
+    description: Allow /give with oak_leaves
+    default: op
+  giverestrict.oak_log:
+    description: Allow /give with oak_log
+    default: op
+  giverestrict.oak_planks:
+    description: Allow /give with oak_planks
+    default: op
+  giverestrict.oak_pressure_plate:
+    description: Allow /give with oak_pressure_plate
+    default: op
+  giverestrict.oak_sapling:
+    description: Allow /give with oak_sapling
+    default: op
+  giverestrict.oak_sign:
+    description: Allow /give with oak_sign
+    default: op
+  giverestrict.oak_slab:
+    description: Allow /give with oak_slab
+    default: op
+  giverestrict.oak_stairs:
+    description: Allow /give with oak_stairs
+    default: op
+  giverestrict.oak_trapdoor:
+    description: Allow /give with oak_trapdoor
+    default: op
+  giverestrict.oak_wood:
+    description: Allow /give with oak_wood
+    default: op
+  giverestrict.observer:
+    description: Allow /give with observer
+    default: op
+  giverestrict.obsidian:
+    description: Allow /give with obsidian
+    default: op
+  giverestrict.ocelot_spawn_egg:
+    description: Allow /give with ocelot_spawn_egg
+    default: op
+  giverestrict.orange_banner:
+    description: Allow /give with orange_banner
+    default: op
+  giverestrict.orange_bed:
+    description: Allow /give with orange_bed
+    default: op
+  giverestrict.orange_carpet:
+    description: Allow /give with orange_carpet
+    default: op
+  giverestrict.orange_concrete:
+    description: Allow /give with orange_concrete
+    default: op
+  giverestrict.orange_concrete_powder:
+    description: Allow /give with orange_concrete_powder
+    default: op
+  giverestrict.orange_dye:
+    description: Allow /give with orange_dye
+    default: op
+  giverestrict.orange_glazed_terracotta:
+    description: Allow /give with orange_glazed_terracotta
+    default: op
+  giverestrict.orange_shulker_box:
+    description: Allow /give with orange_shulker_box
+    default: op
+  giverestrict.orange_stained_glass:
+    description: Allow /give with orange_stained_glass
+    default: op
+  giverestrict.orange_stained_glass_pane:
+    description: Allow /give with orange_stained_glass_pane
+    default: op
+  giverestrict.orange_terracotta:
+    description: Allow /give with orange_terracotta
+    default: op
+  giverestrict.orange_tulip:
+    description: Allow /give with orange_tulip
+    default: op
+  giverestrict.orange_wool:
+    description: Allow /give with orange_wool
+    default: op
+  giverestrict.oxeye_daisy:
+    description: Allow /give with oxeye_daisy
+    default: op
+  giverestrict.packed_ice:
+    description: Allow /give with packed_ice
+    default: op
+  giverestrict.painting:
+    description: Allow /give with painting
+    default: op
+  giverestrict.panda_spawn_egg:
+    description: Allow /give with panda_spawn_egg
+    default: op
+  giverestrict.paper:
+    description: Allow /give with paper
+    default: op
+  giverestrict.parrot_spawn_egg:
+    description: Allow /give with parrot_spawn_egg
+    default: op
+  giverestrict.peony:
+    description: Allow /give with peony
+    default: op
+  giverestrict.petrified_oak_slab:
+    description: Allow /give with petrified_oak_slab
+    default: op
+  giverestrict.phantom_membrane:
+    description: Allow /give with phantom_membrane
+    default: op
+  giverestrict.phantom_spawn_egg:
+    description: Allow /give with phantom_spawn_egg
+    default: op
+  giverestrict.pig_spawn_egg:
+    description: Allow /give with pig_spawn_egg
+    default: op
+  giverestrict.pillager_spawn_egg:
+    description: Allow /give with pillager_spawn_egg
+    default: op
+  giverestrict.pink_banner:
+    description: Allow /give with pink_banner
+    default: op
+  giverestrict.pink_bed:
+    description: Allow /give with pink_bed
+    default: op
+  giverestrict.pink_carpet:
+    description: Allow /give with pink_carpet
+    default: op
+  giverestrict.pink_concrete:
+    description: Allow /give with pink_concrete
+    default: op
+  giverestrict.pink_concrete_powder:
+    description: Allow /give with pink_concrete_powder
+    default: op
+  giverestrict.pink_dye:
+    description: Allow /give with pink_dye
+    default: op
+  giverestrict.pink_glazed_terracotta:
+    description: Allow /give with pink_glazed_terracotta
+    default: op
+  giverestrict.pink_shulker_box:
+    description: Allow /give with pink_shulker_box
+    default: op
+  giverestrict.pink_stained_glass:
+    description: Allow /give with pink_stained_glass
+    default: op
+  giverestrict.pink_stained_glass_pane:
+    description: Allow /give with pink_stained_glass_pane
+    default: op
+  giverestrict.pink_terracotta:
+    description: Allow /give with pink_terracotta
+    default: op
+  giverestrict.pink_tulip:
+    description: Allow /give with pink_tulip
+    default: op
+  giverestrict.pink_wool:
+    description: Allow /give with pink_wool
+    default: op
+  giverestrict.piston:
+    description: Allow /give with piston
+    default: op
+  giverestrict.player_head:
+    description: Allow /give with player_head
+    default: op
+  giverestrict.podzol:
+    description: Allow /give with podzol
+    default: op
+  giverestrict.poisonous_potato:
+    description: Allow /give with poisonous_potato
+    default: op
+  giverestrict.polar_bear_spawn_egg:
+    description: Allow /give with polar_bear_spawn_egg
+    default: op
+  giverestrict.polished_andesite:
+    description: Allow /give with polished_andesite
+    default: op
+  giverestrict.polished_andesite_slab:
+    description: Allow /give with polished_andesite_slab
+    default: op
+  giverestrict.polished_andesite_stairs:
+    description: Allow /give with polished_andesite_stairs
+    default: op
+  giverestrict.polished_diorite:
+    description: Allow /give with polished_diorite
+    default: op
+  giverestrict.polished_diorite_slab:
+    description: Allow /give with polished_diorite_slab
+    default: op
+  giverestrict.polished_diorite_stairs:
+    description: Allow /give with polished_diorite_stairs
+    default: op
+  giverestrict.polished_granite:
+    description: Allow /give with polished_granite
+    default: op
+  giverestrict.polished_granite_slab:
+    description: Allow /give with polished_granite_slab
+    default: op
+  giverestrict.polished_granite_stairs:
+    description: Allow /give with polished_granite_stairs
+    default: op
+  giverestrict.popped_chorus_fruit:
+    description: Allow /give with popped_chorus_fruit
+    default: op
+  giverestrict.poppy:
+    description: Allow /give with poppy
+    default: op
+  giverestrict.porkchop:
+    description: Allow /give with porkchop
+    default: op
+  giverestrict.potato:
+    description: Allow /give with potato
+    default: op
+  giverestrict.potion:
+    description: Allow /give with potion
+    default: op
+  giverestrict.powered_rail:
+    description: Allow /give with powered_rail
+    default: op
+  giverestrict.prismarine:
+    description: Allow /give with prismarine
+    default: op
+  giverestrict.prismarine_brick_slab:
+    description: Allow /give with prismarine_brick_slab
+    default: op
+  giverestrict.prismarine_brick_stairs:
+    description: Allow /give with prismarine_brick_stairs
+    default: op
+  giverestrict.prismarine_bricks:
+    description: Allow /give with prismarine_bricks
+    default: op
+  giverestrict.prismarine_crystals:
+    description: Allow /give with prismarine_crystals
+    default: op
+  giverestrict.prismarine_shard:
+    description: Allow /give with prismarine_shard
+    default: op
+  giverestrict.prismarine_slab:
+    description: Allow /give with prismarine_slab
+    default: op
+  giverestrict.prismarine_stairs:
+    description: Allow /give with prismarine_stairs
+    default: op
+  giverestrict.prismarine_wall:
+    description: Allow /give with prismarine_wall
+    default: op
+  giverestrict.pufferfish:
+    description: Allow /give with pufferfish
+    default: op
+  giverestrict.pufferfish_bucket:
+    description: Allow /give with pufferfish_bucket
+    default: op
+  giverestrict.pufferfish_spawn_egg:
+    description: Allow /give with pufferfish_spawn_egg
+    default: op
+  giverestrict.pumpkin:
+    description: Allow /give with pumpkin
+    default: op
+  giverestrict.pumpkin_pie:
+    description: Allow /give with pumpkin_pie
+    default: op
+  giverestrict.pumpkin_seeds:
+    description: Allow /give with pumpkin_seeds
+    default: op
+  giverestrict.purple_banner:
+    description: Allow /give with purple_banner
+    default: op
+  giverestrict.purple_bed:
+    description: Allow /give with purple_bed
+    default: op
+  giverestrict.purple_carpet:
+    description: Allow /give with purple_carpet
+    default: op
+  giverestrict.purple_concrete:
+    description: Allow /give with purple_concrete
+    default: op
+  giverestrict.purple_concrete_powder:
+    description: Allow /give with purple_concrete_powder
+    default: op
+  giverestrict.purple_dye:
+    description: Allow /give with purple_dye
+    default: op
+  giverestrict.purple_glazed_terracotta:
+    description: Allow /give with purple_glazed_terracotta
+    default: op
+  giverestrict.purple_shulker_box:
+    description: Allow /give with purple_shulker_box
+    default: op
+  giverestrict.purple_stained_glass:
+    description: Allow /give with purple_stained_glass
+    default: op
+  giverestrict.purple_stained_glass_pane:
+    description: Allow /give with purple_stained_glass_pane
+    default: op
+  giverestrict.purple_terraotta:
+    description: Allow /give with purple_terraotta
+    default: op
+  giverestrict.purple_wool:
+    description: Allow /give with purple_wool
+    default: op
+  giverestrict.purpur_block:
+    description: Allow /give with purpur_block
+    default: op
+  giverestrict.purpur_pillar:
+    description: Allow /give with purpur_pillar
+    default: op
+  giverestrict.purpur_slab:
+    description: Allow /give with purpur_slab
+    default: op
+  giverestrict.purpur_stairs:
+    description: Allow /give with purpur_stairs
+    default: op
+  giverestrict.quartz:
+    description: Allow /give with quartz
+    default: op
+  giverestrict.quartz_block:
+    description: Allow /give with quartz_block
+    default: op
+  giverestrict.quartz_pillar:
+    description: Allow /give with quartz_pillar
+    default: op
+  giverestrict.quartz_slab:
+    description: Allow /give with quartz_slab
+    default: op
+  giverestrict.quartz_stairs:
+    description: Allow /give with quartz_stairs
+    default: op
+  giverestrict.rabbit:
+    description: Allow /give with rabbit
+    default: op
+  giverestrict.rabbit_foot:
+    description: Allow /give with rabbit_foot
+    default: op
+  giverestrict.rabbit_hide:
+    description: Allow /give with rabbit_hide
+    default: op
+  giverestrict.rabbit_spawn_egg:
+    description: Allow /give with rabbit_spawn_egg
+    default: op
+  giverestrict.rabbit_stew:
+    description: Allow /give with rabbit_stew
+    default: op
+  giverestrict.rail:
+    description: Allow /give with rail
+    default: op
+  giverestrict.ravager_spawn_egg:
+    description: Allow /give with ravager_spawn_egg
+    default: op
+  giverestrict.red_banner:
+    description: Allow /give with red_banner
+    default: op
+  giverestrict.red_bed:
+    description: Allow /give with red_bed
+    default: op
+  giverestrict.red_carpet:
+    description: Allow /give with red_carpet
+    default: op
+  giverestrict.red_concrete:
+    description: Allow /give with red_concrete
+    default: op
+  giverestrict.red_concrete_powder:
+    description: Allow /give with red_concrete_powder
+    default: op
+  giverestrict.red_dye:
+    description: Allow /give with red_dye
+    default: op
+  giverestrict.red_glazed_terracotta:
+    description: Allow /give with red_glazed_terracotta
+    default: op
+  giverestrict.red_mushroom:
+    description: Allow /give with red_mushroom
+    default: op
+  giverestrict.red_mushroom_block:
+    description: Allow /give with red_mushroom_block
+    default: op
+  giverestrict.red_nether_brick_slab:
+    description: Allow /give with red_nether_brick_slab
+    default: op
+  giverestrict.red_nether_brick_stairs:
+    description: Allow /give with red_nether_brick_stairs
+    default: op
+  giverestrict.red_nether_brick_wall:
+    description: Allow /give with red_nether_brick_wall
+    default: op
+  giverestrict.red_nether_bricks:
+    description: Allow /give with red_nether_bricks
+    default: op
+  giverestrict.red_sand:
+    description: Allow /give with red_sand
+    default: op
+  giverestrict.red_sandstone:
+    description: Allow /give with red_sandstone
+    default: op
+  giverestrict.red_sandstone_slab:
+    description: Allow /give with red_sandstone_slab
+    default: op
+  giverestrict.red_sandstone_stairs:
+    description: Allow /give with red_sandstone_stairs
+    default: op
+  giverestrict.red_sandstone_wall:
+    description: Allow /give with red_sandstone_wall
+    default: op
+  giverestrict.red_shulker_box:
+    description: Allow /give with red_shulker_box
+    default: op
+  giverestrict.red_stained_glass:
+    description: Allow /give with red_stained_glass
+    default: op
+  giverestrict.red_stained_glass_pane:
+    description: Allow /give with red_stained_glass_pane
+    default: op
+  giverestrict.red_terracotta:
+    description: Allow /give with red_terracotta
+    default: op
+  giverestrict.red_tulip:
+    description: Allow /give with red_tulip
+    default: op
+  giverestrict.red_wool:
+    description: Allow /give with red_wool
+    default: op
+  giverestrict.redstone:
+    description: Allow /give with redstone
+    default: op
+  giverestrict.redstone_block:
+    description: Allow /give with redstone_block
+    default: op
+  giverestrict.redstone_lamp:
+    description: Allow /give with redstone_lamp
+    default: op
+  giverestrict.redstone_ore:
+    description: Allow /give with redstone_ore
+    default: op
+  giverestrict.redstone_torch:
+    description: Allow /give with redstone_torch
+    default: op
+  giverestrict.repeater:
+    description: Allow /give with repeater
+    default: op
+  giverestrict.repeating_command_block:
+    description: Allow /give with repeating_command_block
+    default: op
+  giverestrict.rose_bush:
+    description: Allow /give with rose_bush
+    default: op
+  giverestrict.rotten_flesh:
+    description: Allow /give with rotten_flesh
+    default: op
+  giverestrict.saddle:
+    description: Allow /give with saddle
+    default: op
+  giverestrict.salmon:
+    description: Allow /give with salmon
+    default: op
+  giverestrict.salmon_bucket:
+    description: Allow /give with salmon_bucket
+    default: op
+  giverestrict.salmon_spawn_egg:
+    description: Allow /give with salmon_spawn_egg
+    default: op
+  giverestrict.sand:
+    description: Allow /give with sand
+    default: op
+  giverestrict.sandstone:
+    description: Allow /give with sandstone
+    default: op
+  giverestrict.sandstone_slab:
+    description: Allow /give with sandstone_slab
+    default: op
+  giverestrict.sandstone_stairs:
+    description: Allow /give with sandstone_stairs
+    default: op
+  giverestrict.sandstone_wall:
+    description: Allow /give with sandstone_wall
+    default: op
+  giverestrict.scaffolding:
+    description: Allow /give with scaffolding
+    default: op
+  giverestrict.scute:
+    description: Allow /give with scute
+    default: op
+  giverestrict.sea_lantern:
+    description: Allow /give with sea_lantern
+    default: op
+  giverestrict.sea_pickle:
+    description: Allow /give with sea_pickle
+    default: op
+  giverestrict.seagrass:
+    description: Allow /give with seagrass
+    default: op
+  giverestrict.shears:
+    description: Allow /give with shears
+    default: op
+  giverestrict.sheep_spawn_egg:
+    description: Allow /give with sheep_spawn_egg
+    default: op
+  giverestrict.shield:
+    description: Allow /give with shield
+    default: op
+  giverestrict.shulker_box:
+    description: Allow /give with shulker_box
+    default: op
+  giverestrict.shulker_shell:
+    description: Allow /give with shulker_shell
+    default: op
+  giverestrict.shulker_spawn_egg:
+    description: Allow /give with shulker_spawn_egg
+    default: op
+  giverestrict.silverfish_spawn_egg:
+    description: Allow /give with silverfish_spawn_egg
+    default: op
+  giverestrict.skeleton_horse_spawn_egg:
+    description: Allow /give with skeleton_horse_spawn_egg
+    default: op
+  giverestrict.skeleton_skull:
+    description: Allow /give with skeleton_skull
+    default: op
+  giverestrict.skeleton_spawn_egg:
+    description: Allow /give with skeleton_spawn_egg
+    default: op
+  giverestrict.skull_banner_pattern:
+    description: Allow /give with skull_banner_pattern
+    default: op
+  giverestrict.slime_ball:
+    description: Allow /give with slime_ball
+    default: op
+  giverestrict.slime_block:
+    description: Allow /give with slime_block
+    default: op
+  giverestrict.slime_spawn_egg:
+    description: Allow /give with slime_spawn_egg
+    default: op
+  giverestrict.smithing_table:
+    description: Allow /give with smithing_table
+    default: op
+  giverestrict.smoker:
+    description: Allow /give with smoker
+    default: op
+  giverestrict.smooth_quartz:
+    description: Allow /give with smooth_quartz
+    default: op
+  giverestrict.smooth_quartz_slab:
+    description: Allow /give with smooth_quartz_slab
+    default: op
+  giverestrict.smooth_quartz_stairs:
+    description: Allow /give with smooth_quartz_stairs
+    default: op
+  giverestrict.smooth_red_sandstone:
+    description: Allow /give with smooth_red_sandstone
+    default: op
+  giverestrict.smooth_red_sandstone_slab:
+    description: Allow /give with smooth_red_sandstone_slab
+    default: op
+  giverestrict.smooth_red_sandstone_stairs:
+    description: Allow /give with smooth_red_sandstone_stairs
+    default: op
+  giverestrict.smooth_sandstone:
+    description: Allow /give with smooth_sandstone
+    default: op
+  giverestrict.smooth_sandstone_slab:
+    description: Allow /give with smooth_sandstone_slab
+    default: op
+  giverestrict.smooth_sandstone_stairs:
+    description: Allow /give with smooth_sandstone_stairs
+    default: op
+  giverestrict.smooth_stone:
+    description: Allow /give with smooth_stone
+    default: op
+  giverestrict.smooth_stone_slab:
+    description: Allow /give with smooth_stone_slab
+    default: op
+  giverestrict.snow:
+    description: Allow /give with snow
+    default: op
+  giverestrict.snow_block:
+    description: Allow /give with snow_block
+    default: op
+  giverestrict.snowball:
+    description: Allow /give with snowball
+    default: op
+  giverestrict.soul_sand:
+    description: Allow /give with soul_sand
+    default: op
+  giverestrict.spawner:
+    description: Allow /give with spawner
+    default: op
+  giverestrict.spectral_arrow:
+    description: Allow /give with spectral_arrow
+    default: op
+  giverestrict.spider_eye:
+    description: Allow /give with spider_eye
+    default: op
+  giverestrict.spider_spawn_egg:
+    description: Allow /give with spider_spawn_egg
+    default: op
+  giverestrict.splash_potion:
+    description: Allow /give with splash_potion
+    default: op
+  giverestrict.sponge:
+    description: Allow /give with sponge
+    default: op
+  giverestrict.spruce_boat:
+    description: Allow /give with spruce_boat
+    default: op
+  giverestrict.spruce_button:
+    description: Allow /give with spruce_button
+    default: op
+  giverestrict.spruce_door:
+    description: Allow /give with spruce_door
+    default: op
+  giverestrict.spruce_fence:
+    description: Allow /give with spruce_fence
+    default: op
+  giverestrict.spruce_fence_gate:
+    description: Allow /give with spruce_fence_gate
+    default: op
+  giverestrict.spruce_leaves:
+    description: Allow /give with spruce_leaves
+    default: op
+  giverestrict.spruce_log:
+    description: Allow /give with spruce_log
+    default: op
+  giverestrict.spruce_planks:
+    description: Allow /give with spruce_planks
+    default: op
+  giverestrict.spruce_pressure_plate:
+    description: Allow /give with spruce_pressure_plate
+    default: op
+  giverestrict.spruce_sapling:
+    description: Allow /give with spruce_sapling
+    default: op
+  giverestrict.spruce_sign:
+    description: Allow /give with spruce_sign
+    default: op
+  giverestrict.spruce_slab:
+    description: Allow /give with spruce_slab
+    default: op
+  giverestrict.spruce_stairs:
+    description: Allow /give with spruce_stairs
+    default: op
+  giverestrict.spruce_trapdoor:
+    description: Allow /give with spruce_trapdoor
+    default: op
+  giverestrict.spruce_wood:
+    description: Allow /give with spruce_wood
+    default: op
+  giverestrict.squid_spawn_egg:
+    description: Allow /give with squid_spawn_egg
+    default: op
+  giverestrict.stick:
+    description: Allow /give with stick
+    default: op
+  giverestrict.sticky_piston:
+    description: Allow /give with sticky_piston
+    default: op
+  giverestrict.stone:
+    description: Allow /give with stone
+    default: op
+  giverestrict.stone_axe:
+    description: Allow /give with stone_axe
+    default: op
+  giverestrict.stone_brick_slab:
+    description: Allow /give with stone_brick_slab
+    default: op
+  giverestrict.stone_brick_stairs:
+    description: Allow /give with stone_brick_stairs
+    default: op
+  giverestrict.stone_brick_wall:
+    description: Allow /give with stone_brick_wall
+    default: op
+  giverestrict.stone_bricks:
+    description: Allow /give with stone_bricks
+    default: op
+  giverestrict.stone_button:
+    description: Allow /give with stone_button
+    default: op
+  giverestrict.stone_hoe:
+    description: Allow /give with stone_hoe
+    default: op
+  giverestrict.stone_pickaxe:
+    description: Allow /give with stone_pickaxe
+    default: op
+  giverestrict.stone_pressure_plate:
+    description: Allow /give with stone_pressure_plate
+    default: op
+  giverestrict.stone_shovel:
+    description: Allow /give with stone_shovel
+    default: op
+  giverestrict.stone_slab:
+    description: Allow /give with stone_slab
+    default: op
+  giverestrict.stone_stairs:
+    description: Allow /give with stone_stairs
+    default: op
+  giverestrict.stone_sword:
+    description: Allow /give with stone_sword
+    default: op
+  giverestrict.stonecutter:
+    description: Allow /give with stonecutter
+    default: op
+  giverestrict.stray_spawn_egg:
+    description: Allow /give with stray_spawn_egg
+    default: op
+  giverestrict.string:
+    description: Allow /give with string
+    default: op
+  giverestrict.stripped_acacia_log:
+    description: Allow /give with stripped_acacia_log
+    default: op
+  giverestrict.stripped_acacia_wood:
+    description: Allow /give with stripped_acacia_wood
+    default: op
+  giverestrict.stripped_birch_log:
+    description: Allow /give with stripped_birch_log
+    default: op
+  giverestrict.stripped_birch_wood:
+    description: Allow /give with stripped_birch_wood
+    default: op
+  giverestrict.stripped_dark_oak_log:
+    description: Allow /give with stripped_dark_oak_log
+    default: op
+  giverestrict.stripped_dark_oak_wood:
+    description: Allow /give with stripped_dark_oak_wood
+    default: op
+  giverestrict.stripped_jungle_log:
+    description: Allow /give with stripped_jungle_log
+    default: op
+  giverestrict.stripped_jungle_wood:
+    description: Allow /give with stripped_jungle_wood
+    default: op
+  giverestrict.stripped_oak_log:
+    description: Allow /give with stripped_oak_log
+    default: op
+  giverestrict.stripped_oak_wood:
+    description: Allow /give with stripped_oak_wood
+    default: op
+  giverestrict.stripped_spruce_log:
+    description: Allow /give with stripped_spruce_log
+    default: op
+  giverestrict.stripped_spruce_wood:
+    description: Allow /give with stripped_spruce_wood
+    default: op
+  giverestrict.structure_block:
+    description: Allow /give with structure_block
+    default: op
+  giverestrict.structure_void:
+    description: Allow /give with structure_void
+    default: op
+  giverestrict.sugar:
+    description: Allow /give with sugar
+    default: op
+  giverestrict.sugar_cane:
+    description: Allow /give with sugar_cane
+    default: op
+  giverestrict.sunflower:
+    description: Allow /give with sunflower
+    default: op
+  giverestrict.suspicious_stew:
+    description: Allow /give with suspicious_stew
+    default: op
+  giverestrict.sweet_berries:
+    description: Allow /give with sweet_berries
+    default: op
+  giverestrict.tall_grass:
+    description: Allow /give with tall_grass
+    default: op
+  giverestrict.terracotta:
+    description: Allow /give with terracotta
+    default: op
+  giverestrict.tipped_arrow:
+    description: Allow /give with tipped_arrow
+    default: op
+  giverestrict.tnt:
+    description: Allow /give with tnt
+    default: op
+  giverestrict.tnt_minecart:
+    description: Allow /give with tnt_minecart
+    default: op
+  giverestrict.torch:
+    description: Allow /give with torch
+    default: op
+  giverestrict.totem_of_undying:
+    description: Allow /give with totem_of_undying
+    default: op
+  giverestrict.trader_llama_spawn_egg:
+    description: Allow /give with trader_llama_spawn_egg
+    default: op
+  giverestrict.trapped_chest:
+    description: Allow /give with trapped_chest
+    default: op
+  giverestrict.trident:
+    description: Allow /give with trident
+    default: op
+  giverestrict.tripwire_hook:
+    description: Allow /give with tripwire_hook
+    default: op
+  giverestrict.tropical_fish:
+    description: Allow /give with tropical_fish
+    default: op
+  giverestrict.tropical_fish_bucket:
+    description: Allow /give with tropical_fish_bucket
+    default: op
+  giverestrict.tropical_fish_spawn_egg:
+    description: Allow /give with tropical_fish_spawn_egg
+    default: op
+  giverestrict.tube_coral:
+    description: Allow /give with tube_coral
+    default: op
+  giverestrict.tube_coral_block:
+    description: Allow /give with tube_coral_block
+    default: op
+  giverestrict.tube_coral_fan:
+    description: Allow /give with tube_coral_fan
+    default: op
+  giverestrict.turtle_egg:
+    description: Allow /give with turtle_egg
+    default: op
+  giverestrict.turtle_helmet:
+    description: Allow /give with turtle_helmet
+    default: op
+  giverestrict.turtle_spawn_egg:
+    description: Allow /give with turtle_spawn_egg
+    default: op
+  giverestrict.vex_spawn_egg:
+    description: Allow /give with vex_spawn_egg
+    default: op
+  giverestrict.villager_spawn_egg:
+    description: Allow /give with villager_spawn_egg
+    default: op
+  giverestrict.vindicator_spawn_egg:
+    description: Allow /give with vindicator_spawn_egg
+    default: op
+  giverestrict.vine:
+    description: Allow /give with vine
+    default: op
+  giverestrict.wandering_trader_spawn_egg:
+    description: Allow /give with wandering_trader_spawn_egg
+    default: op
+  giverestrict.water_bucket:
+    description: Allow /give with water_bucket
+    default: op
+  giverestrict.wet_sponge:
+    description: Allow /give with wet_sponge
+    default: op
+  giverestrict.wheat:
+    description: Allow /give with wheat
+    default: op
+  giverestrict.wheat_seeds:
+    description: Allow /give with wheat_seeds
+    default: op
+  giverestrict.white_banner:
+    description: Allow /give with white_banner
+    default: op
+  giverestrict.white_bed:
+    description: Allow /give with white_bed
+    default: op
+  giverestrict.white_carpet:
+    description: Allow /give with white_carpet
+    default: op
+  giverestrict.white_concrete:
+    description: Allow /give with white_concrete
+    default: op
+  giverestrict.white_concrete_powder:
+    description: Allow /give with white_concrete_powder
+    default: op
+  giverestrict.white_dye:
+    description: Allow /give with white_dye
+    default: op
+  giverestrict.white_glazed_terracotta:
+    description: Allow /give with white_glazed_terracotta
+    default: op
+  giverestrict.white_shulker_box:
+    description: Allow /give with white_shulker_box
+    default: op
+  giverestrict.white_stained_glass:
+    description: Allow /give with white_stained_glass
+    default: op
+  giverestrict.white_stained_glass_pane:
+    description: Allow /give with white_stained_glass_pane
+    default: op
+  giverestrict.white_terracotta:
+    description: Allow /give with white_terracotta
+    default: op
+  giverestrict.white_tulip:
+    description: Allow /give with white_tulip
+    default: op
+  giverestrict.white_wool:
+    description: Allow /give with white_wool
+    default: op
+  giverestrict.witch_spawn_egg:
+    description: Allow /give with witch_spawn_egg
+    default: op
+  giverestrict.wither_rose:
+    description: Allow /give with wither_rose
+    default: op
+  giverestrict.wither_skeleton_skull:
+    description: Allow /give with wither_skeleton_skull
+    default: op
+  giverestrict.wither_skeleton_spawn_egg:
+    description: Allow /give with wither_skeleton_spawn_egg
+    default: op
+  giverestrict.wolf_spawn_egg:
+    description: Allow /give with wolf_spawn_egg
+    default: op
+  giverestrict.wooden_axe:
+    description: Allow /give with wooden_axe
+    default: op
+  giverestrict.wooden_hoe:
+    description: Allow /give with wooden_hoe
+    default: op
+  giverestrict.wooden_pickaxe:
+    description: Allow /give with wooden_pickaxe
+    default: op
+  giverestrict.wooden_shovel:
+    description: Allow /give with wooden_shovel
+    default: op
+  giverestrict.wooden_sword:
+    description: Allow /give with wooden_sword
+    default: op
+  giverestrict.writable_book:
+    description: Allow /give with writable_book
+    default: op
+  giverestrict.written_book:
+    description: Allow /give with written_book
+    default: op
+  giverestrict.yellow_bed:
+    description: Allow /give with yellow_bed
+    default: op
+  giverestrict.yellow_carpet:
+    description: Allow /give with yellow_carpet
+    default: op
+  giverestrict.yellow_concrete:
+    description: Allow /give with yellow_concrete
+    default: op
+  giverestrict.yellow_concrete_powder:
+    description: Allow /give with yellow_concrete_powder
+    default: op
+  giverestrict.yellow_dye:
+    description: Allow /give with yellow_dye
+    default: op
+  giverestrict.yellow_glazed_terracotta:
+    description: Allow /give with yellow_glazed_terracotta
+    default: op
+  giverestrict.yellow_shulker_box:
+    description: Allow /give with yellow_shulker_box
+    default: op
+  giverestrict.yellow_stained_glass:
+    description: Allow /give with yellow_stained_glass
+    default: op
+  giverestrict.yellow_stained_glass_pane:
+    description: Allow /give with yellow_stained_glass_pane
+    default: op
+  giverestrict.yellow_terracotta:
+    description: Allow /give with yellow_terracotta
+    default: op
+  giverestrict.yellow_wool:
+    description: Allow /give with yellow_wool
+    default: op
+  giverestrict.zombie_head:
+    description: Allow /give with zombie_head
+    default: op
+  giverestrict.zombie_horse_spawn_egg:
+    description: Allow /give with zombie_horse_spawn_egg
+    default: op
+  giverestrict.zombie_pigman_spawn_egg:
+    description: Allow /give with zombie_pigman_spawn_egg
+    default: op
+  giverestrict.zombie_spawn_egg:
+    description: Allow /give with zombie_spawn_egg
+    default: op
+  giverestrict.zombie_villager_spawn_egg:
+    description: Allow /give with zombie_villager_spawn_egg
+    default: op
+  giverestrict.*:
+    description: Allow all /give commands
+    children:
+      giverestrict.acacia_boat: true
+      giverestrict.acacia_button: true
+      giverestrict.acacia_door: true
+      giverestrict.acacia_fence: true
+      giverestrict.acacia_fence_gate: true
+      giverestrict.acacia_leaves: true
+      giverestrict.acacia_log: true
+      giverestrict.acacia_planks: true
+      giverestrict.acacia_pressure_plate: true
+      giverestrict.acacia_sapling: true
+      giverestrict.acacia_sign: true
+      giverestrict.acacia_slab: true
+      giverestrict.acacia_stairs: true
+      giverestrict.acacia_trapdoor: true
+      giverestrict.acacia_wood: true
+      giverestrict.activator_rail: true
+      giverestrict.air: true
+      giverestrict.allium: true
+      giverestrict.andesite: true
+      giverestrict.andesite_slab: true
+      giverestrict.andesite_stairs: true
+      giverestrict.andesite_wall: true
+      giverestrict.anvil: true
+      giverestrict.apple: true
+      giverestrict.armor_stand: true
+      giverestrict.arrow: true
+      giverestrict.azure_bluet: true
+      giverestrict.baked_potato: true
+      giverestrict.bamboo: true
+      giverestrict.barrel: true
+      giverestrict.barrier: true
+      giverestrict.bat_spawn_egg: true
+      giverestrict.beacon: true
+      giverestrict.bedrock: true
+      giverestrict.bee_nest: true
+      giverestrict.bee_spawn_egg: true
+      giverestrict.beef: true
+      giverestrict.beehive: true
+      giverestrict.beetroot: true
+      giverestrict.beetroot_seeds: true
+      giverestrict.beetroot_soup: true
+      giverestrict.bell: true
+      giverestrict.birch_boat: true
+      giverestrict.birch_button: true
+      giverestrict.birch_door: true
+      giverestrict.birch_fence: true
+      giverestrict.birch_fence_gate: true
+      giverestrict.birch_leaves: true
+      giverestrict.birch_log: true
+      giverestrict.birch_planks: true
+      giverestrict.birch_pressure_plate: true
+      giverestrict.birch_sapling: true
+      giverestrict.birch_sign: true
+      giverestrict.birch_slab: true
+      giverestrict.birch_stairs: true
+      giverestrict.birch_trapdoor: true
+      giverestrict.birch_wood: true
+      giverestrict.black_banner: true
+      giverestrict.black_bed: true
+      giverestrict.black_carpet: true
+      giverestrict.black_concrete: true
+      giverestrict.black_concrete_powder: true
+      giverestrict.black_dye: true
+      giverestrict.black_glazed_terracotta: true
+      giverestrict.black_shulker_box: true
+      giverestrict.black_stained_glass: true
+      giverestrict.black_stained_glass_pane: true
+      giverestrict.black_terracotta: true
+      giverestrict.black_wool: true
+      giverestrict.blast_furnace: true
+      giverestrict.blaze_powder: true
+      giverestrict.blaze_rod: true
+      giverestrict.blaze_spawn_egg: true
+      giverestrict.blue_banner: true
+      giverestrict.blue_bed: true
+      giverestrict.blue_carpet: true
+      giverestrict.blue_concrete: true
+      giverestrict.blue_concrete_powder: true
+      giverestrict.blue_dye: true
+      giverestrict.blue_glazed_terracotta: true
+      giverestrict.blue_ice: true
+      giverestrict.blue_orchid: true
+      giverestrict.blue_shulker_box: true
+      giverestrict.blue_stained_glass: true
+      giverestrict.blue_stained_glass_pane: true
+      giverestrict.blue_terracotta: true
+      giverestrict.blue_wool: true
+      giverestrict.bone: true
+      giverestrict.bone_block: true
+      giverestrict.bone_meal: true
+      giverestrict.book: true
+      giverestrict.bookshelf: true
+      giverestrict.bow: true
+      giverestrict.bowl: true
+      giverestrict.brain_coral: true
+      giverestrict.brain_coral_block: true
+      giverestrict.brain_coral_fan: true
+      giverestrict.bread: true
+      giverestrict.brewing_stand: true
+      giverestrict.brick: true
+      giverestrict.brick_slab: true
+      giverestrict.brick_stairs: true
+      giverestrict.brick_wall: true
+      giverestrict.bricks: true
+      giverestrict.brown_banner: true
+      giverestrict.brown_bed: true
+      giverestrict.brown_carpet: true
+      giverestrict.brown_concrete: true
+      giverestrict.brown_concrete_powder: true
+      giverestrict.brown_dye: true
+      giverestrict.brown_glazed_terracotta: true
+      giverestrict.brown_mushroom: true
+      giverestrict.brown_mushroom_block: true
+      giverestrict.brown_shulker_box: true
+      giverestrict.brown_stained_glass: true
+      giverestrict.brown_stained_glass_pane: true
+      giverestrict.brown_terracotta: true
+      giverestrict.brown_wool: true
+      giverestrict.bubble_coral: true
+      giverestrict.bubble_coral_block: true
+      giverestrict.bucket: true
+      giverestrict.cactus: true
+      giverestrict.cake: true
+      giverestrict.campfire: true
+      giverestrict.carrot: true
+      giverestrict.carrot_on_a_stick: true
+      giverestrict.cartography_table: true
+      giverestrict.carved_pumpkin: true
+      giverestrict.cat_spawn_egg: true
+      giverestrict.cauldron: true
+      giverestrict.cave_spider_spawn_egg: true
+      giverestrict.chain_command_block: true
+      giverestrict.chainmail_boots: true
+      giverestrict.chainmail_chestplate: true
+      giverestrict.chainmail_helmet: true
+      giverestrict.chainmail_leggings: true
+      giverestrict.charcoal: true
+      giverestrict.chest: true
+      giverestrict.chest_minecart: true
+      giverestrict.chicken: true
+      giverestrict.chicken_spawn_egg: true
+      giverestrict.chipped_anvil: true
+      giverestrict.chiseled_quartz_block: true
+      giverestrict.chiseled_red_sandstone: true
+      giverestrict.chiseled_sandstone: true
+      giverestrict.chiseled_stone_bricks: true
+      giverestrict.chorus_flower: true
+      giverestrict.chorus_fruit: true
+      giverestrict.chorus_plant: true
+      giverestrict.clay: true
+      giverestrict.clay_ball: true
+      giverestrict.clock: true
+      giverestrict.coal: true
+      giverestrict.coal_block: true
+      giverestrict.coal_ore: true
+      giverestrict.coarse_dirt: true
+      giverestrict.cobblestone: true
+      giverestrict.cobblestone_slab: true
+      giverestrict.cobblestone_stairs: true
+      giverestrict.cobblestone_wall: true
+      giverestrict.cobweb: true
+      giverestrict.cocoa_beans: true
+      giverestrict.cod: true
+      giverestrict.cod_bucket: true
+      giverestrict.cod_spawn_egg: true
+      giverestrict.command_block: true
+      giverestrict.command_block_minecart: true
+      giverestrict.comparator: true
+      giverestrict.compass: true
+      giverestrict.composter: true
+      giverestrict.conduit: true
+      giverestrict.cooked_beef: true
+      giverestrict.cooked_chicken: true
+      giverestrict.cooked_cod: true
+      giverestrict.cooked_mutton: true
+      giverestrict.cooked_porkchop: true
+      giverestrict.cooked_rabbit: true
+      giverestrict.cooked_salmon: true
+      giverestrict.cookie: true
+      giverestrict.cornflower: true
+      giverestrict.cow_spawn_egg: true
+      giverestrict.cracked_stone_bricks: true
+      giverestrict.crafting_table: true
+      giverestrict.creeper_banner_pattern: true
+      giverestrict.creeper_head: true
+      giverestrict.creeper_spawn_egg: true
+      giverestrict.crossbow: true
+      giverestrict.cut_red_sandstone: true
+      giverestrict.cut_red_sandstone_slab: true
+      giverestrict.cyan_banner: true
+      giverestrict.cyan_bed: true
+      giverestrict.cyan_carpet: true
+      giverestrict.cyan_concrete: true
+      giverestrict.cyan_concrete_powder: true
+      giverestrict.cyan_dye: true
+      giverestrict.cyan_glazed_terracotta: true
+      giverestrict.cyan_shulker_box: true
+      giverestrict.cyan_stained_glass: true
+      giverestrict.cyan_stained_glass_pane: true
+      giverestrict.cyan_terracotta: true
+      giverestrict.cyan_wool: true
+      giverestrict.damaged_anvil: true
+      giverestrict.dandelion: true
+      giverestrict.dark_oak_boat: true
+      giverestrict.dark_oak_button: true
+      giverestrict.dark_oak_door: true
+      giverestrict.dark_oak_fence: true
+      giverestrict.dark_oak_fence_gate: true
+      giverestrict.dark_oak_leaves: true
+      giverestrict.dark_oak_log: true
+      giverestrict.dark_oak_planks: true
+      giverestrict.dark_oak_pressure_plate: true
+      giverestrict.dark_oak_sapling: true
+      giverestrict.dark_oak_sign: true
+      giverestrict.dark_oak_slab: true
+      giverestrict.dark_oak_stairs: true
+      giverestrict.dark_oak_trapdoor: true
+      giverestrict.dark_oak_wood: true
+      giverestrict.dark_prismarine: true
+      giverestrict.dark_prismarine_slab: true
+      giverestrict.dark_prismarine_stairs: true
+      giverestrict.daylight_detector: true
+      giverestrict.dead_brain_coral: true
+      giverestrict.dead_brain_coral_block: true
+      giverestrict.dead_brain_coral_fan: true
+      giverestrict.dead_bubble_coral: true
+      giverestrict.dead_bubble_coral_block: true
+      giverestrict.dead_bush: true
+      giverestrict.dead_fire_coral: true
+      giverestrict.dead_fire_coral_block: true
+      giverestrict.dead_fire_coral_fan: true
+      giverestrict.dead_horn_coral: true
+      giverestrict.dead_horn_coral_block: true
+      giverestrict.dead_horn_coral_fan: true
+      giverestrict.dead_tube_coral: true
+      giverestrict.dead_tube_coral_block: true
+      giverestrict.dead_tube_coral_fan: true
+      giverestrict.debug_stick: true
+      giverestrict.detector_rail: true
+      giverestrict.diamond: true
+      giverestrict.diamond_axe: true
+      giverestrict.diamond_block: true
+      giverestrict.diamond_boots: true
+      giverestrict.diamond_chestplate: true
+      giverestrict.diamond_helmet: true
+      giverestrict.diamond_hoe: true
+      giverestrict.diamond_horse_armor: true
+      giverestrict.diamond_leggings: true
+      giverestrict.diamond_ore: true
+      giverestrict.diamond_pickaxe: true
+      giverestrict.diamond_shovel: true
+      giverestrict.diamond_sword: true
+      giverestrict.diorite: true
+      giverestrict.diorite_slab: true
+      giverestrict.diorite_stairs: true
+      giverestrict.diorite_wall: true
+      giverestrict.dirt: true
+      giverestrict.dispenser: true
+      giverestrict.dolphin_spawn_egg: true
+      giverestrict.donkey_spawn_egg: true
+      giverestrict.dragon_breath: true
+      giverestrict.dragon_egg: true
+      giverestrict.dragon_head: true
+      giverestrict.dried_kelp: true
+      giverestrict.dried_kelp_block: true
+      giverestrict.dropper: true
+      giverestrict.drowned_spawn_egg: true
+      giverestrict.egg: true
+      giverestrict.elder_guardian_spawn_egg: true
+      giverestrict.elytra: true
+      giverestrict.emerald: true
+      giverestrict.emerald_block: true
+      giverestrict.emerald_ore: true
+      giverestrict.enchanted_book: true
+      giverestrict.enchanted_golden_apple: true
+      giverestrict.enchanting_table: true
+      giverestrict.end_crystal: true
+      giverestrict.end_portal_frame: true
+      giverestrict.end_rod: true
+      giverestrict.end_stone: true
+      giverestrict.end_stone_brick_slab: true
+      giverestrict.end_stone_brick_stairs: true
+      giverestrict.end_stone_brick_wall: true
+      giverestrict.end_stone_bricks: true
+      giverestrict.ender_chest: true
+      giverestrict.ender_eye: true
+      giverestrict.ender_pearl: true
+      giverestrict.enderman_spawn_egg: true
+      giverestrict.endermite_spawn_egg: true
+      giverestrict.evoker_spawn_egg: true
+      giverestrict.experience_bottle: true
+      giverestrict.farmland: true
+      giverestrict.feather: true
+      giverestrict.fermented_spider_eye: true
+      giverestrict.fern: true
+      giverestrict.filled_map: true
+      giverestrict.fire_charge: true
+      giverestrict.fire_coral: true
+      giverestrict.fire_coral_block: true
+      giverestrict.fire_coral_fan: true
+      giverestrict.firework_rocket: true
+      giverestrict.firework_star: true
+      giverestrict.fishing_rod: true
+      giverestrict.fletching_table: true
+      giverestrict.flint: true
+      giverestrict.flint_and_steel: true
+      giverestrict.flower_banner_pattern: true
+      giverestrict.flower_pot: true
+      giverestrict.fox_spawn_egg: true
+      giverestrict.furnace: true
+      giverestrict.furnace_minecart: true
+      giverestrict.ghast_spawn_egg: true
+      giverestrict.ghast_tear: true
+      giverestrict.glass: true
+      giverestrict.glass_bottle: true
+      giverestrict.glass_pane: true
+      giverestrict.glistering_melon_slice: true
+      giverestrict.globe_banner_pattern: true
+      giverestrict.glowstone: true
+      giverestrict.glowstone_dust: true
+      giverestrict.gold_block: true
+      giverestrict.gold_ingot: true
+      giverestrict.gold_nugget: true
+      giverestrict.gold_ore: true
+      giverestrict.golden_apple: true
+      giverestrict.golden_axe: true
+      giverestrict.golden_boots: true
+      giverestrict.golden_carrot: true
+      giverestrict.golden_chestplate: true
+      giverestrict.golden_helmet: true
+      giverestrict.golden_hoe: true
+      giverestrict.golden_horse_armor: true
+      giverestrict.golden_leggings: true
+      giverestrict.golden_pickaxe: true
+      giverestrict.golden_shovel: true
+      giverestrict.golden_sword: true
+      giverestrict.granite: true
+      giverestrict.granite_slab: true
+      giverestrict.granite_stairs: true
+      giverestrict.granite_wall: true
+      giverestrict.grass: true
+      giverestrict.grass_block: true
+      giverestrict.grass_path: true
+      giverestrict.gravel: true
+      giverestrict.gray_banner: true
+      giverestrict.gray_bed: true
+      giverestrict.gray_carpet: true
+      giverestrict.gray_concrete: true
+      giverestrict.gray_concrete_powder: true
+      giverestrict.gray_dye: true
+      giverestrict.gray_glazed_terracotta: true
+      giverestrict.gray_shulker_box: true
+      giverestrict.gray_stained_glass: true
+      giverestrict.gray_stained_glass_pane: true
+      giverestrict.gray_terracotta: true
+      giverestrict.gray_wool: true
+      giverestrict.green_banner: true
+      giverestrict.green_bed: true
+      giverestrict.green_carpet: true
+      giverestrict.green_concrete: true
+      giverestrict.green_concrete_powder: true
+      giverestrict.green_dye: true
+      giverestrict.green_glazed_terracotta: true
+      giverestrict.green_shulker_box: true
+      giverestrict.green_stained_glass: true
+      giverestrict.green_stained_glass_pane: true
+      giverestrict.green_terracotta: true
+      giverestrict.green_wool: true
+      giverestrict.grindstone: true
+      giverestrict.guardian_spawn_egg: true
+      giverestrict.gunpowder: true
+      giverestrict.hay_block: true
+      giverestrict.heart_of_the_sea: true
+      giverestrict.heavy_weighted_pressure_plate: true
+      giverestrict.honey_block: true
+      giverestrict.honey_bottle: true
+      giverestrict.honeycomb: true
+      giverestrict.honeycomb_block: true
+      giverestrict.hopper: true
+      giverestrict.hopper_minecart: true
+      giverestrict.horn_coral: true
+      giverestrict.horn_coral_block: true
+      giverestrict.horn_coral_fan: true
+      giverestrict.horse_spawn_egg: true
+      giverestrict.husk_spawn_egg: true
+      giverestrict.ice: true
+      giverestrict.infested_chiseled_stone_bricks: true
+      giverestrict.infested_cobblestone: true
+      giverestrict.infested_cracked_stone_bricks: true
+      giverestrict.infested_mossy_stone_bricks: true
+      giverestrict.infested_stone: true
+      giverestrict.infested_stone_bricks: true
+      giverestrict.ink_sac: true
+      giverestrict.iron_axe: true
+      giverestrict.iron_bars: true
+      giverestrict.iron_block: true
+      giverestrict.iron_boots: true
+      giverestrict.iron_chestplate: true
+      giverestrict.iron_door: true
+      giverestrict.iron_helmet: true
+      giverestrict.iron_hoe: true
+      giverestrict.iron_horse_armor: true
+      giverestrict.iron_ingot: true
+      giverestrict.iron_leggings: true
+      giverestrict.iron_nugget: true
+      giverestrict.iron_ore: true
+      giverestrict.iron_pickaxe: true
+      giverestrict.iron_shovel: true
+      giverestrict.iron_sword: true
+      giverestrict.iron_trapdoor: true
+      giverestrict.item_frame: true
+      giverestrict.jack_o_lantern: true
+      giverestrict.jigsaw: true
+      giverestrict.jukebox: true
+      giverestrict.jungle_boat: true
+      giverestrict.jungle_button: true
+      giverestrict.jungle_door: true
+      giverestrict.jungle_fence: true
+      giverestrict.jungle_fence_gate: true
+      giverestrict.jungle_leaves: true
+      giverestrict.jungle_log: true
+      giverestrict.jungle_planks: true
+      giverestrict.jungle_pressure_plate: true
+      giverestrict.jungle_sapling: true
+      giverestrict.jungle_sign: true
+      giverestrict.jungle_slab: true
+      giverestrict.jungle_stairs: true
+      giverestrict.jungle_trapdoor: true
+      giverestrict.jungle_wood: true
+      giverestrict.kelp: true
+      giverestrict.knowledge_block: true
+      giverestrict.ladder: true
+      giverestrict.lantern: true
+      giverestrict.lapis_block: true
+      giverestrict.lapis_lazuli: true
+      giverestrict.lapis_ore: true
+      giverestrict.large_fern: true
+      giverestrict.lava_bucket: true
+      giverestrict.lead: true
+      giverestrict.leather: true
+      giverestrict.leather_boots: true
+      giverestrict.leather_chestplate: true
+      giverestrict.leather_helmet: true
+      giverestrict.leather_horse_armor: true
+      giverestrict.leather_leggings: true
+      giverestrict.lectern: true
+      giverestrict.lever: true
+      giverestrict.light_blue_banner: true
+      giverestrict.light_blue_bed: true
+      giverestrict.light_blue_carpet: true
+      giverestrict.light_blue_concrete: true
+      giverestrict.light_blue_concrete_powder: true
+      giverestrict.light_blue_dye: true
+      giverestrict.light_blue_glazed_terracotta: true
+      giverestrict.light_blue_shulker_box: true
+      giverestrict.light_blue_stained_glass: true
+      giverestrict.light_blue_stained_glass_pane: true
+      giverestrict.light_blue_terracotta: true
+      giverestrict.light_blue_wool: true
+      giverestrict.light_gray_banner: true
+      giverestrict.light_gray_bed: true
+      giverestrict.light_gray_carpet: true
+      giverestrict.light_gray_concrete: true
+      giverestrict.light_gray_concrete_powder: true
+      giverestrict.light_gray_dye: true
+      giverestrict.light_gray_glazed_terracotta: true
+      giverestrict.light_gray_shulker_box: true
+      giverestrict.light_gray_stained_glass: true
+      giverestrict.light_gray_stained_glass_pane: true
+      giverestrict.light_gray_terracotta: true
+      giverestrict.light_gray_wool: true
+      giverestrict.light_weighted_pressure_plate: true
+      giverestrict.lilac: true
+      giverestrict.lily_of_the_valley: true
+      giverestrict.lily_pad: true
+      giverestrict.lime_banner: true
+      giverestrict.lime_bed: true
+      giverestrict.lime_carpet: true
+      giverestrict.lime_concrete: true
+      giverestrict.lime_concrete_powder: true
+      giverestrict.lime_dye: true
+      giverestrict.lime_glazed_terracotta: true
+      giverestrict.lime_shulker_box: true
+      giverestrict.lime_stained_glass: true
+      giverestrict.lime_stained_glass_pane: true
+      giverestrict.lime_terracotta: true
+      giverestrict.lime_wool: true
+      giverestrict.lingering_potion: true
+      giverestrict.llama_spawn_egg: true
+      giverestrict.loom: true
+      giverestrict.magenta_banner: true
+      giverestrict.magenta_bed: true
+      giverestrict.magenta_carpet: true
+      giverestrict.magenta_concrete: true
+      giverestrict.magenta_concrete_powder: true
+      giverestrict.magenta_dye: true
+      giverestrict.magenta_glazed_terracotta: true
+      giverestrict.magenta_shulker_box: true
+      giverestrict.magenta_stained_glass: true
+      giverestrict.magenta_stained_glass_pane: true
+      giverestrict.magenta_terracotta: true
+      giverestrict.magenta_wool: true
+      giverestrict.magma_block: true
+      giverestrict.magma_cream: true
+      giverestrict.magma_cube_spawn_egg: true
+      giverestrict.map: true
+      giverestrict.melon: true
+      giverestrict.melon_seeds: true
+      giverestrict.melon_slice: true
+      giverestrict.milk_bucket: true
+      giverestrict.minecart: true
+      giverestrict.mojang_banner_pattern: true
+      giverestrict.mooshroom_spawn_egg: true
+      giverestrict.mossy_cobblestone: true
+      giverestrict.mossy_cobblestone_slab: true
+      giverestrict.mossy_cobblestone_stairs: true
+      giverestrict.mossy_cobblestone_wall: true
+      giverestrict.mossy_stone_brick_slab: true
+      giverestrict.mossy_stone_brick_stairs: true
+      giverestrict.mossy_stone_brick_wall: true
+      giverestrict.mossy_stone_bricks: true
+      giverestrict.mule_spawn_egg: true
+      giverestrict.mushroom_stem: true
+      giverestrict.mushroom_stew: true
+      giverestrict.music_disc_11: true
+      giverestrict.music_disc_13: true
+      giverestrict.music_disk_blocks: true
+      giverestrict.music_disk_cat: true
+      giverestrict.music_disk_chirp: true
+      giverestrict.music_disk_far: true
+      giverestrict.music_disk_mall: true
+      giverestrict.music_disk_mellohi: true
+      giverestrict.music_disk_stal: true
+      giverestrict.music_disk_strad: true
+      giverestrict.music_disk_wait: true
+      giverestrict.music_disk_ward: true
+      giverestrict.mutton: true
+      giverestrict.mycelium: true
+      giverestrict.name_tag: true
+      giverestrict.nautilus_shell: true
+      giverestrict.nether_brick: true
+      giverestrict.nether_brick_fence: true
+      giverestrict.nether_brick_slab: true
+      giverestrict.nether_brick_stairs: true
+      giverestrict.nether_brick_wall: true
+      giverestrict.nether_bricks: true
+      giverestrict.nether_quartz_ore: true
+      giverestrict.nether_star: true
+      giverestrict.nether_wart: true
+      giverestrict.nether_wart_block: true
+      giverestrict.netherrack: true
+      giverestrict.note_block: true
+      giverestrict.oak_boat: true
+      giverestrict.oak_button: true
+      giverestrict.oak_door: true
+      giverestrict.oak_fence: true
+      giverestrict.oak_fence_gate: true
+      giverestrict.oak_leaves: true
+      giverestrict.oak_log: true
+      giverestrict.oak_planks: true
+      giverestrict.oak_pressure_plate: true
+      giverestrict.oak_sapling: true
+      giverestrict.oak_sign: true
+      giverestrict.oak_slab: true
+      giverestrict.oak_stairs: true
+      giverestrict.oak_trapdoor: true
+      giverestrict.oak_wood: true
+      giverestrict.observer: true
+      giverestrict.obsidian: true
+      giverestrict.ocelot_spawn_egg: true
+      giverestrict.orange_banner: true
+      giverestrict.orange_bed: true
+      giverestrict.orange_carpet: true
+      giverestrict.orange_concrete: true
+      giverestrict.orange_concrete_powder: true
+      giverestrict.orange_dye: true
+      giverestrict.orange_glazed_terracotta: true
+      giverestrict.orange_shulker_box: true
+      giverestrict.orange_stained_glass: true
+      giverestrict.orange_stained_glass_pane: true
+      giverestrict.orange_terracotta: true
+      giverestrict.orange_tulip: true
+      giverestrict.orange_wool: true
+      giverestrict.oxeye_daisy: true
+      giverestrict.packed_ice: true
+      giverestrict.painting: true
+      giverestrict.panda_spawn_egg: true
+      giverestrict.paper: true
+      giverestrict.parrot_spawn_egg: true
+      giverestrict.peony: true
+      giverestrict.petrified_oak_slab: true
+      giverestrict.phantom_membrane: true
+      giverestrict.phantom_spawn_egg: true
+      giverestrict.pig_spawn_egg: true
+      giverestrict.pillager_spawn_egg: true
+      giverestrict.pink_banner: true
+      giverestrict.pink_bed: true
+      giverestrict.pink_carpet: true
+      giverestrict.pink_concrete: true
+      giverestrict.pink_concrete_powder: true
+      giverestrict.pink_dye: true
+      giverestrict.pink_glazed_terracotta: true
+      giverestrict.pink_shulker_box: true
+      giverestrict.pink_stained_glass: true
+      giverestrict.pink_stained_glass_pane: true
+      giverestrict.pink_terracotta: true
+      giverestrict.pink_tulip: true
+      giverestrict.pink_wool: true
+      giverestrict.piston: true
+      giverestrict.player_head: true
+      giverestrict.podzol: true
+      giverestrict.poisonous_potato: true
+      giverestrict.polar_bear_spawn_egg: true
+      giverestrict.polished_andesite: true
+      giverestrict.polished_andesite_slab: true
+      giverestrict.polished_andesite_stairs: true
+      giverestrict.polished_diorite: true
+      giverestrict.polished_diorite_slab: true
+      giverestrict.polished_diorite_stairs: true
+      giverestrict.polished_granite: true
+      giverestrict.polished_granite_slab: true
+      giverestrict.polished_granite_stairs: true
+      giverestrict.popped_chorus_fruit: true
+      giverestrict.poppy: true
+      giverestrict.porkchop: true
+      giverestrict.potato: true
+      giverestrict.potion: true
+      giverestrict.powered_rail: true
+      giverestrict.prismarine: true
+      giverestrict.prismarine_brick_slab: true
+      giverestrict.prismarine_brick_stairs: true
+      giverestrict.prismarine_bricks: true
+      giverestrict.prismarine_crystals: true
+      giverestrict.prismarine_shard: true
+      giverestrict.prismarine_slab: true
+      giverestrict.prismarine_stairs: true
+      giverestrict.prismarine_wall: true
+      giverestrict.pufferfish: true
+      giverestrict.pufferfish_bucket: true
+      giverestrict.pufferfish_spawn_egg: true
+      giverestrict.pumpkin: true
+      giverestrict.pumpkin_pie: true
+      giverestrict.pumpkin_seeds: true
+      giverestrict.purple_banner: true
+      giverestrict.purple_bed: true
+      giverestrict.purple_carpet: true
+      giverestrict.purple_concrete: true
+      giverestrict.purple_concrete_powder: true
+      giverestrict.purple_dye: true
+      giverestrict.purple_glazed_terracotta: true
+      giverestrict.purple_shulker_box: true
+      giverestrict.purple_stained_glass: true
+      giverestrict.purple_stained_glass_pane: true
+      giverestrict.purple_terraotta: true
+      giverestrict.purple_wool: true
+      giverestrict.purpur_block: true
+      giverestrict.purpur_pillar: true
+      giverestrict.purpur_slab: true
+      giverestrict.purpur_stairs: true
+      giverestrict.quartz: true
+      giverestrict.quartz_block: true
+      giverestrict.quartz_pillar: true
+      giverestrict.quartz_slab: true
+      giverestrict.quartz_stairs: true
+      giverestrict.rabbit: true
+      giverestrict.rabbit_foot: true
+      giverestrict.rabbit_hide: true
+      giverestrict.rabbit_spawn_egg: true
+      giverestrict.rabbit_stew: true
+      giverestrict.rail: true
+      giverestrict.ravager_spawn_egg: true
+      giverestrict.red_banner: true
+      giverestrict.red_bed: true
+      giverestrict.red_carpet: true
+      giverestrict.red_concrete: true
+      giverestrict.red_concrete_powder: true
+      giverestrict.red_dye: true
+      giverestrict.red_glazed_terracotta: true
+      giverestrict.red_mushroom: true
+      giverestrict.red_mushroom_block: true
+      giverestrict.red_nether_brick_slab: true
+      giverestrict.red_nether_brick_stairs: true
+      giverestrict.red_nether_brick_wall: true
+      giverestrict.red_nether_bricks: true
+      giverestrict.red_sand: true
+      giverestrict.red_sandstone: true
+      giverestrict.red_sandstone_slab: true
+      giverestrict.red_sandstone_stairs: true
+      giverestrict.red_sandstone_wall: true
+      giverestrict.red_shulker_box: true
+      giverestrict.red_stained_glass: true
+      giverestrict.red_stained_glass_pane: true
+      giverestrict.red_terracotta: true
+      giverestrict.red_tulip: true
+      giverestrict.red_wool: true
+      giverestrict.redstone: true
+      giverestrict.redstone_block: true
+      giverestrict.redstone_lamp: true
+      giverestrict.redstone_ore: true
+      giverestrict.redstone_torch: true
+      giverestrict.repeater: true
+      giverestrict.repeating_command_block: true
+      giverestrict.rose_bush: true
+      giverestrict.rotten_flesh: true
+      giverestrict.saddle: true
+      giverestrict.salmon: true
+      giverestrict.salmon_bucket: true
+      giverestrict.salmon_spawn_egg: true
+      giverestrict.sand: true
+      giverestrict.sandstone: true
+      giverestrict.sandstone_slab: true
+      giverestrict.sandstone_stairs: true
+      giverestrict.sandstone_wall: true
+      giverestrict.scaffolding: true
+      giverestrict.scute: true
+      giverestrict.sea_lantern: true
+      giverestrict.sea_pickle: true
+      giverestrict.seagrass: true
+      giverestrict.shears: true
+      giverestrict.sheep_spawn_egg: true
+      giverestrict.shield: true
+      giverestrict.shulker_box: true
+      giverestrict.shulker_shell: true
+      giverestrict.shulker_spawn_egg: true
+      giverestrict.silverfish_spawn_egg: true
+      giverestrict.skeleton_horse_spawn_egg: true
+      giverestrict.skeleton_skull: true
+      giverestrict.skeleton_spawn_egg: true
+      giverestrict.skull_banner_pattern: true
+      giverestrict.slime_ball: true
+      giverestrict.slime_block: true
+      giverestrict.slime_spawn_egg: true
+      giverestrict.smithing_table: true
+      giverestrict.smoker: true
+      giverestrict.smooth_quartz: true
+      giverestrict.smooth_quartz_slab: true
+      giverestrict.smooth_quartz_stairs: true
+      giverestrict.smooth_red_sandstone: true
+      giverestrict.smooth_red_sandstone_slab: true
+      giverestrict.smooth_red_sandstone_stairs: true
+      giverestrict.smooth_sandstone: true
+      giverestrict.smooth_sandstone_slab: true
+      giverestrict.smooth_sandstone_stairs: true
+      giverestrict.smooth_stone: true
+      giverestrict.smooth_stone_slab: true
+      giverestrict.snow: true
+      giverestrict.snow_block: true
+      giverestrict.snowball: true
+      giverestrict.soul_sand: true
+      giverestrict.spawner: true
+      giverestrict.spectral_arrow: true
+      giverestrict.spider_eye: true
+      giverestrict.spider_spawn_egg: true
+      giverestrict.splash_potion: true
+      giverestrict.sponge: true
+      giverestrict.spruce_boat: true
+      giverestrict.spruce_button: true
+      giverestrict.spruce_door: true
+      giverestrict.spruce_fence: true
+      giverestrict.spruce_fence_gate: true
+      giverestrict.spruce_leaves: true
+      giverestrict.spruce_log: true
+      giverestrict.spruce_planks: true
+      giverestrict.spruce_pressure_plate: true
+      giverestrict.spruce_sapling: true
+      giverestrict.spruce_sign: true
+      giverestrict.spruce_slab: true
+      giverestrict.spruce_stairs: true
+      giverestrict.spruce_trapdoor: true
+      giverestrict.spruce_wood: true
+      giverestrict.squid_spawn_egg: true
+      giverestrict.stick: true
+      giverestrict.sticky_piston: true
+      giverestrict.stone: true
+      giverestrict.stone_axe: true
+      giverestrict.stone_brick_slab: true
+      giverestrict.stone_brick_stairs: true
+      giverestrict.stone_brick_wall: true
+      giverestrict.stone_bricks: true
+      giverestrict.stone_button: true
+      giverestrict.stone_hoe: true
+      giverestrict.stone_pickaxe: true
+      giverestrict.stone_pressure_plate: true
+      giverestrict.stone_shovel: true
+      giverestrict.stone_slab: true
+      giverestrict.stone_stairs: true
+      giverestrict.stone_sword: true
+      giverestrict.stonecutter: true
+      giverestrict.stray_spawn_egg: true
+      giverestrict.string: true
+      giverestrict.stripped_acacia_log: true
+      giverestrict.stripped_acacia_wood: true
+      giverestrict.stripped_birch_log: true
+      giverestrict.stripped_birch_wood: true
+      giverestrict.stripped_dark_oak_log: true
+      giverestrict.stripped_dark_oak_wood: true
+      giverestrict.stripped_jungle_log: true
+      giverestrict.stripped_jungle_wood: true
+      giverestrict.stripped_oak_log: true
+      giverestrict.stripped_oak_wood: true
+      giverestrict.stripped_spruce_log: true
+      giverestrict.stripped_spruce_wood: true
+      giverestrict.structure_block: true
+      giverestrict.structure_void: true
+      giverestrict.sugar: true
+      giverestrict.sugar_cane: true
+      giverestrict.sunflower: true
+      giverestrict.suspicious_stew: true
+      giverestrict.sweet_berries: true
+      giverestrict.tall_grass: true
+      giverestrict.terracotta: true
+      giverestrict.tipped_arrow: true
+      giverestrict.tnt: true
+      giverestrict.tnt_minecart: true
+      giverestrict.torch: true
+      giverestrict.totem_of_undying: true
+      giverestrict.trader_llama_spawn_egg: true
+      giverestrict.trapped_chest: true
+      giverestrict.trident: true
+      giverestrict.tripwire_hook: true
+      giverestrict.tropical_fish: true
+      giverestrict.tropical_fish_bucket: true
+      giverestrict.tropical_fish_spawn_egg: true
+      giverestrict.tube_coral: true
+      giverestrict.tube_coral_block: true
+      giverestrict.tube_coral_fan: true
+      giverestrict.turtle_egg: true
+      giverestrict.turtle_helmet: true
+      giverestrict.turtle_spawn_egg: true
+      giverestrict.vex_spawn_egg: true
+      giverestrict.villager_spawn_egg: true
+      giverestrict.vindicator_spawn_egg: true
+      giverestrict.vine: true
+      giverestrict.wandering_trader_spawn_egg: true
+      giverestrict.water_bucket: true
+      giverestrict.wet_sponge: true
+      giverestrict.wheat: true
+      giverestrict.wheat_seeds: true
+      giverestrict.white_banner: true
+      giverestrict.white_bed: true
+      giverestrict.white_carpet: true
+      giverestrict.white_concrete: true
+      giverestrict.white_concrete_powder: true
+      giverestrict.white_dye: true
+      giverestrict.white_glazed_terracotta: true
+      giverestrict.white_shulker_box: true
+      giverestrict.white_stained_glass: true
+      giverestrict.white_stained_glass_pane: true
+      giverestrict.white_terracotta: true
+      giverestrict.white_tulip: true
+      giverestrict.white_wool: true
+      giverestrict.witch_spawn_egg: true
+      giverestrict.wither_rose: true
+      giverestrict.wither_skeleton_skull: true
+      giverestrict.wither_skeleton_spawn_egg: true
+      giverestrict.wolf_spawn_egg: true
+      giverestrict.wooden_axe: true
+      giverestrict.wooden_hoe: true
+      giverestrict.wooden_pickaxe: true
+      giverestrict.wooden_shovel: true
+      giverestrict.wooden_sword: true
+      giverestrict.writable_book: true
+      giverestrict.written_book: true
+      giverestrict.yellow_bed: true
+      giverestrict.yellow_carpet: true
+      giverestrict.yellow_concrete: true
+      giverestrict.yellow_concrete_powder: true
+      giverestrict.yellow_dye: true
+      giverestrict.yellow_glazed_terracotta: true
+      giverestrict.yellow_shulker_box: true
+      giverestrict.yellow_stained_glass: true
+      giverestrict.yellow_stained_glass_pane: true
+      giverestrict.yellow_terracotta: true
+      giverestrict.yellow_wool: true
+      giverestrict.zombie_head: true
+      giverestrict.zombie_horse_spawn_egg: true
+      giverestrict.zombie_pigman_spawn_egg: true
+      giverestrict.zombie_spawn_egg: true
+      giverestrict.zombie_villager_spawn_egg: true
