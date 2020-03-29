@@ -11,7 +11,7 @@ Using a permissions plugin, you can permit users to `/give` themself (or others)
 Each Minecraft block and item has a permission assigned to it with the format `giverestrict.$ID`, where `$ID` is the block/item ID assigned by Minecraft (See [Minecraft Java Edition Data Values](https://minecraft.gamepedia.com/Java_Edition_data_values))
 
 In addition, there are groups that simplify granting permissions to certain related blocks and items.
-#### `giverestrict.all_lights`
+### `giverestrict.all_lights`
 > Gives permission to `/give` lanterns and torches.
 
 <details><summary><b>Items</b></summary>
