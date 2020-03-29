@@ -12,9 +12,9 @@ Each Minecraft block and item has a permission assigned to it with the format `g
 
 In addition, there are groups that simplify granting permissions to certain related blocks and items.
 #### `giverestrict.all_lights`
-Gives permission to `/give` lanterns and torches.
+> Gives permission to `/give` lanterns and torches.
 
-<details><summary>Items</summary>
+<details><summary><b>Items</b></summary>
   <p>
     
   |Item|
