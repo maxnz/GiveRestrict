@@ -5,11 +5,14 @@ api-version: "1.15"
 description: Add permissions for each item that /give can give
 
 permissions:
+  # Light
   giverestrict.all_lights:
     description: Allow /give with lanterns and torches
     children:
       giverestrict.lantern: true
       giverestrict.torch: true
+
+  # Food
   giverestrict.all_cooked_food:
     description: Allow /give with cooked food items
     children:
@@ -29,6 +32,22 @@ permissions:
       giverestrict.pumpkin_pie: true
 
   # Tools
+  giverestrict.all_tools:
+    description: Allow /give with tools
+    children:
+      giverestrict.all_axe: true
+      giverestrict.all_hoe: true
+      giverestrict.all_pickaxe: true
+      giverestrict.all_shovel: true
+      giverestrict.all_sword: true
+      giverestrict.all_bow: true
+      giverestrict.carrot_on_a_stick: true
+      giverestrict.clock: true
+      giverestrict.compass: true
+      giverestrict.fishing_rod: true
+      giverestrict.shears: true
+      giverestrict.shield: true
+
   giverestrict.all_axe:
     description: Allow /give with all axes
     children:
@@ -37,7 +56,7 @@ permissions:
       giverestrict.iron_axe: true
       giverestrict.gold_axe: true
       giverestrict.diamond_axe: true
-  giverestrict.all_hoes:
+  giverestrict.all_hoe:
     description: Allow /give with all axes
     children:
       giverestrict.woooden_hoe: true
@@ -75,23 +94,58 @@ permissions:
       giverestrict.bow: true
       giverestrict.crossbow: true
       giverestrict.arrow: true
-  giverestrict.all_tools:
-    description: Allow /give with tools
+
+  giverestrict.all_wood_tools:
+    description: Allow /give with wooden tools
     children:
-      giverestrict.all_axe: true
-      giverestrict.all_hoe: true
-      giverestrict.all_pickaxe: true
-      giverestrict.all_shovel: true
-      giverestrict.all_sword: true
-      giverestrict.all_bow: true
-      giverestrict.carrot_on_a_stick: true
-      giverestrict.clock: true
-      giverestrict.compass: true
-      giverestrict.fishing_rod: true
-      giverestrict.shears: true
-      giverestrict.shield: true
+      giverestrict.wooden_axe: true
+      giverestrict.wooden_hoe: true
+      giverestrict.wooden_pickaxe: true
+      giverestrict.wooden_shovel: true
+      giverestrict.wooden_sword: true
+  giverestrict.all_stone_tools:
+    description: Allow /give with wooden tools
+    children:
+      giverestrict.stone_axe: true
+      giverestrict.stone_hoe: true
+      giverestrict.stone_pickaxe: true
+      giverestrict.stone_shovel: true
+      giverestrict.stone_sword: true
+  giverestrict.all_iron_tools:
+    description: Allow /give with wooden tools
+    children:
+      giverestrict.iron_axe: true
+      giverestrict.iron_hoe: true
+      giverestrict.iron_pickaxe: true
+      giverestrict.iron_shovel: true
+      giverestrict.iron_sword: true
+  giverestrict.all_gold_tools:
+    description: Allow /give with wooden tools
+    children:
+      giverestrict.gold_axe: true
+      giverestrict.gold_hoe: true
+      giverestrict.gold_pickaxe: true
+      giverestrict.gold_shovel: true
+      giverestrict.gold_sword: true
+  giverestrict.all_diamond_tools:
+    description: Allow /give with wooden tools
+    children:
+      giverestrict.diamond_axe: true
+      giverestrict.diamond_hoe: true
+      giverestrict.diamond_pickaxe: true
+      giverestrict.diamond_shovel: true
+      giverestrict.diamond_sword: true
 
   # Armor
+  giverestrict.all_armor:
+    description: Allow /give of all armor
+    children:
+      giverestrict.all_leather_armor: true
+      giverestrict.all_iron_armor: true
+      giverestrict.all_gold_armor: true
+      giverestrict.all_diamond_armor: true
+      giverestrict.all_chainmail_armor: true
+
   giverestrict.all_leather_armor:
     description: Allow /give of leather armor
     children:
@@ -127,16 +181,15 @@ permissions:
       giverestrict.chainmail_chestplate: true
       giverestrict.chainmail_helmet: true
       giverestrict.chainmail_leggings: true
-  giverestrict.all_armor:
-    description: Allow /give of all armor
-    children:
-      giverestrict.all_leather_armor: true
-      giverestrict.all_iron_armor: true
-      giverestrict.all_gold_armor: true
-      giverestrict.all_diamond_armor: true
-      giverestrict.all_chainmail_armor: true
 
   # Spawn eggs
+  giverestrict.all_spawn_egg:
+    description: Allow /give with spawn eggs
+    children:
+      giverestrict.all_passive_spawn_egg: true
+      giverestrict.all_neutral_spawn_egg: true
+      giverestrict.all_hostile_spawn_egg: true
+
   giverestrict.all_passive_spawn_egg:
     description: Allow /give with passive mob spawn eggs
     children:
@@ -205,12 +258,6 @@ permissions:
       giverestrict.wither_skeleton_spawn_egg: true
       giverestrict.zombie_spawn_egg: true
       giverestrict.zombie_villager_spawn_egg: true
-  giverestrict.all_spawn_egg:
-    description: Allow /give with spawn eggs
-    children:
-      giverestrict.all_passive_spawn_egg: true
-      giverestrict.all_neutral_spawn_egg: true
-      giverestrict.all_hostile_spawn_egg: true
 
   # Individual items
   giverestrict.acacia_boat:

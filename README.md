@@ -14,10 +14,10 @@ In addition, there are groups that simplify granting permissions to certain rela
 
 ### `giverestrict.all_lights`
 
-<details><summary><b>Items</b></summary>
+<details><summary><code>giverestrict.all_lights</code></summary>
   <p>
     
-  |Item|
+  |Items|
   |:-|
   |`lantern`|
   |`torch`|
@@ -26,10 +26,10 @@ In addition, there are groups that simplify granting permissions to certain rela
 
 ### `giverestrict.all_cooked_food`
 
-<details><summary><b>Items</b></summary>
+<details><summary><code>giverestrict.all_cooked_food</code></summary>
   <p>
     
-  |Item|
+  |Items|
   |:-|
   |`baked_potato`|
   |`beetroot_soup`|
@@ -48,17 +48,200 @@ In addition, there are groups that simplify granting permissions to certain rela
   </p>
 </details>
 
-### `giverestrict.all_axe`
+### `giverestrict.all_tools`
 
-<details><summary><b>Items</b></summary>
+<details><summary><code>giverestrict.all_tools</code></summary>
   <p>
     
-  |Item|
+  |Groups|
+  |:-|
+  |`all_axe`|
+  |`all_hoe`|
+  |`all_pickaxe`|
+  |`all_shovel`|
+  |`all_sword`|
+  |`all_bow`|
+  
+  |Items|
+  |:-|
+  |`carrot_on_a_stick`|
+  |`clock`|
+  |`compass`|
+  |`fishing_rod`|
+  |`shears`|
+  |`shield`|
+  </p>
+</details>
+
+### `giverestrict.all_axe`
+
+<details><summary><code>giverestrict.all_axe</code></summary>
+  <p>
+    
+  |Items|
   |:-|
   |`wooden_axe`|
   |`stone_axe`|
   |`iron_axe`|
   |`gold_axe`|
   |`diamond_axe`|
+  </p>
+</details>
+
+### `giverestrict.all_hoe`
+
+<details><summary><code>giverestrict.all_hoe</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`wooden_hoe`|
+  |`stone_hoe`|
+  |`iron_hoe`|
+  |`gold_hoe`|
+  |`diamond_hoe`|
+  </p>
+</details>
+
+### `giverestrict.all_pickaxe`
+
+<details><summary><code>giverestrict.all_pickaxe</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`wooden_pickaxe`|
+  |`stone_pickaxe`|
+  |`iron_pickaxe`|
+  |`gold_pickaxe`|
+  |`diamond_pickaxe`|
+  </p>
+</details>
+
+### `giverestrict.all_shovel`
+
+<details><summary><code>giverestrict.all_shovel</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`wooden_shovel`|
+  |`stone_shovel`|
+  |`iron_shovel`|
+  |`gold_shovel`|
+  |`diamond_shovel`|
+  </p>
+</details>
+
+### `giverestrict.all_sword`
+
+<details><summary><code>giverestrict.all_sword</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`wooden_sword`|
+  |`stone_sword`|
+  |`iron_sword`|
+  |`gold_sword`|
+  |`diamond_sword`|
+  </p>
+</details>
+
+### `giverestrict.all_bow`
+
+<details><summary><code>giverestrict.all_bow</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`bow`|
+  |`crossbow`|
+  |`arrow`|
+  </p>
+</details>
+
+### `giverestrict.all_armor`
+
+<details><summary><code>giverestrict.all_armor</code></summary>
+  <p>
+    
+  |Groups|
+  |:-|
+  |`all_leather_armor`|
+  |`all_iron_armor`|
+  |`all_gold_armor`|
+  |`all_diamond_armor`|
+  |`all_chainmail_armor`|
+  </p>
+</details>
+
+### `giverestrict.all_leather_armor`
+
+<details><summary><code>giverestrict.all_leather_armor</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`leather_boots`|
+  |`leather_chestplate`|
+  |`leather_helmet`|
+  |`leather_leggings`|
+  </p>
+</details>
+
+### `giverestrict.all_iron_armor`
+
+<details><summary><code>giverestrict.all_iron_armor</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`iron_boots`|
+  |`iron_chestplate`|
+  |`iron_helmet`|
+  |`iron_leggings`|
+  </p>
+</details>
+
+### `giverestrict.all_gold_armor`
+
+<details><summary><code>giverestrict.all_gold_armor</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`gold_boots`|
+  |`gold_chestplate`|
+  |`gold_helmet`|
+  |`gold_leggings`|
+  </p>
+</details>
+
+### `giverestrict.all_diamond_armor`
+
+<details><summary><code>giverestrict.all_diamond_armor</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`diamond_boots`|
+  |`diamond_chestplate`|
+  |`diamond_helmet`|
+  |`diamond_leggings`|
+  </p>
+</details>
+
+### `giverestrict.all_chainmail_armor`
+
+<details><summary><code>giverestrict.all_chainmail_armor</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`chainmail_boots`|
+  |`chainmail_chestplate`|
+  |`chainmail_helmet`|
+  |`chainmail_leggings`|
   </p>
 </details>
