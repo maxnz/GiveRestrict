@@ -12,8 +12,6 @@ Each Minecraft block and item has a permission assigned to it with the format `g
 
 In addition, there are groups that simplify granting permissions to certain related blocks and items.
 
-### `giverestrict.all_lights`
-
 <details><summary><code>giverestrict.all_lights</code></summary>
   <p>
     
@@ -23,8 +21,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   |`torch`|
   </p>
 </details>
-
-### `giverestrict.all_cooked_food`
 
 <details><summary><code>giverestrict.all_cooked_food</code></summary>
   <p>
@@ -47,8 +43,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   |`pumpkin_pie`|
   </p>
 </details>
-
-### `giverestrict.all_tools`
 
 <details><summary><code>giverestrict.all_tools</code></summary>
   <p>
@@ -73,8 +67,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   </p>
 </details>
 
-### `giverestrict.all_axe`
-
 <details><summary><code>giverestrict.all_axe</code></summary>
   <p>
     
@@ -87,8 +79,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   |`diamond_axe`|
   </p>
 </details>
-
-### `giverestrict.all_hoe`
 
 <details><summary><code>giverestrict.all_hoe</code></summary>
   <p>
@@ -103,8 +93,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   </p>
 </details>
 
-### `giverestrict.all_pickaxe`
-
 <details><summary><code>giverestrict.all_pickaxe</code></summary>
   <p>
     
@@ -117,8 +105,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   |`diamond_pickaxe`|
   </p>
 </details>
-
-### `giverestrict.all_shovel`
 
 <details><summary><code>giverestrict.all_shovel</code></summary>
   <p>
@@ -133,8 +119,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   </p>
 </details>
 
-### `giverestrict.all_sword`
-
 <details><summary><code>giverestrict.all_sword</code></summary>
   <p>
     
@@ -148,8 +132,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   </p>
 </details>
 
-### `giverestrict.all_bow`
-
 <details><summary><code>giverestrict.all_bow</code></summary>
   <p>
     
@@ -161,7 +143,70 @@ In addition, there are groups that simplify granting permissions to certain rela
   </p>
 </details>
 
-### `giverestrict.all_armor`
+<details><summary><code>giverestrict.all_wooden_tools</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`wooden_axe`|
+  |`wooden_hoe`|
+  |`wooden_pickaxe`|
+  |`wooden_shovel`|
+  |`wooden_sword`|
+  </p>
+</details>
+
+<details><summary><code>giverestrict.all_stone_tools</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`stone_axe`|
+  |`stone_hoe`|
+  |`stone_pickaxe`|
+  |`stone_shovel`|
+  |`stone_sword`|
+  </p>
+</details>
+
+<details><summary><code>giverestrict.all_iron_tools</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`iron_axe`|
+  |`iron_hoe`|
+  |`iron_pickaxe`|
+  |`iron_shovel`|
+  |`iron_sword`|
+  </p>
+</details>
+
+<details><summary><code>giverestrict.all_gold_tools</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`gold_axe`|
+  |`gold_hoe`|
+  |`gold_pickaxe`|
+  |`gold_shovel`|
+  |`gold_sword`|
+  </p>
+</details>
+
+<details><summary><code>giverestrict.all_diamond_tools</code></summary>
+  <p>
+    
+  |Items|
+  |:-|
+  |`diamond_axe`|
+  |`diamond_hoe`|
+  |`diamond_pickaxe`|
+  |`diamond_shovel`|
+  |`diamond_sword`|
+  </p>
+</details>
 
 <details><summary><code>giverestrict.all_armor</code></summary>
   <p>
@@ -176,8 +221,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   </p>
 </details>
 
-### `giverestrict.all_leather_armor`
-
 <details><summary><code>giverestrict.all_leather_armor</code></summary>
   <p>
     
@@ -189,8 +232,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   |`leather_leggings`|
   </p>
 </details>
-
-### `giverestrict.all_iron_armor`
 
 <details><summary><code>giverestrict.all_iron_armor</code></summary>
   <p>
@@ -204,8 +245,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   </p>
 </details>
 
-### `giverestrict.all_gold_armor`
-
 <details><summary><code>giverestrict.all_gold_armor</code></summary>
   <p>
     
@@ -218,8 +257,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   </p>
 </details>
 
-### `giverestrict.all_diamond_armor`
-
 <details><summary><code>giverestrict.all_diamond_armor</code></summary>
   <p>
     
@@ -231,8 +268,6 @@ In addition, there are groups that simplify granting permissions to certain rela
   |`diamond_leggings`|
   </p>
 </details>
-
-### `giverestrict.all_chainmail_armor`
 
 <details><summary><code>giverestrict.all_chainmail_armor</code></summary>
   <p>
