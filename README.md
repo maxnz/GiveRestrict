@@ -311,7 +311,7 @@ Other smaller groups exist as follows:
 <details><summary><code>giverestrict.all_passive_spawn_egg</code></summary>
   <p>
     
-  |Groups|
+  |Items|
   |:-|
   |`bat_spawn_egg`|
   |`cat_spawn_egg`|
@@ -343,7 +343,7 @@ Other smaller groups exist as follows:
 <details><summary><code>giverestrict.all_neutral_spawn_egg</code></summary>
   <p>
     
-  |Groups|
+  |Items|
   |:-|
   |`bee_spawn_egg`|
   |`cave_spider_spawn_egg`|
@@ -362,7 +362,7 @@ Other smaller groups exist as follows:
 <details><summary><code>giverestrict.all_neutral_spawn_egg</code></summary>
   <p>
     
-  |Groups|
+  |Items|
   |:-|
   |`blaze_spawn_egg`|
   |`creeper_spawn_egg`|
