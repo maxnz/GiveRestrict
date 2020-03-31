@@ -5,13 +5,6 @@ api-version: "1.15"
 description: Add permissions for each item that /give can give
 
 permissions:
-  # Light
-  giverestrict.all_lights:
-    description: Allow /give with lanterns and torches
-    children:
-      giverestrict.lantern: true
-      giverestrict.torch: true
-
   # Food
   giverestrict.all_cooked_food:
     description: Allow /give with cooked food items
@@ -36,11 +29,12 @@ permissions:
     description: Allow /give with tools
     children:
       giverestrict.all_axe: true
+      giverestrict.all_bow: true
       giverestrict.all_hoe: true
+      giverestrict.all_lights: true
       giverestrict.all_pickaxe: true
       giverestrict.all_shovel: true
       giverestrict.all_sword: true
-      giverestrict.all_bow: true
       giverestrict.carrot_on_a_stick: true
       giverestrict.clock: true
       giverestrict.compass: true
@@ -94,6 +88,11 @@ permissions:
       giverestrict.bow: true
       giverestrict.crossbow: true
       giverestrict.arrow: true
+  giverestrict.all_lights:
+    description: Allow /give with lanterns and torches
+    children:
+      giverestrict.lantern: true
+      giverestrict.torch: true
 
   giverestrict.all_wood_tools:
     description: Allow /give with wooden tools
